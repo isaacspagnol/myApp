@@ -1,0 +1,37 @@
+
+    <ion-header>
+      <ion-navbar>
+        <ion-title class="aling-center">
+          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
+        </ion-title>
+      </ion-navbar>
+    </ion-header>
+  <ion-content scroll="false">
+    <div class="ion-padding">
+      <h2 class="aling-center" >LOUMAR PARTNERS</h2>
+    </div>
+
+    <div padding>
+       <form action="">
+
+         <!-- Input with placeholder -->
+         <ion-label>Codigo Loumar Ou E-mail</ion-label>
+          <ion-input type="text" required placeholder="Digite seu codigo Loumar Ou E-mail"></ion-input>
+           <!-- Input with placeholder -->
+         <ion-label>Senha</ion-label>
+         <ion-input type="password" placeholder="Digite sua senha"></ion-input>
+       </form>
+    </div>
+    <div padding>
+      <button ion-button block (click)="login()" class="btn-entrar">{{ 'ENTRAR'}}</button>
+    </div>
+
+    <div padding>
+      <p class="aling-center">NOVO AQUI E QUER SE CADASTRAR PARA GANHAR VANTAGENS?</p>
+        <button ion-button block (click)="signup()" class="btn-login">{{ 'CADASTAR'}}</button>
+    </div>
+
+    <div padding>
+        <p class="aling-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>
+      </div>
+  </ion-content>

@@ -1,0 +1,72 @@
+page-minhacarteira {
+    .content-md {
+        color: #000!important;
+        background-color: #FFF!important;
+    }
+    button{
+        background: #f0f8ff00;
+    }
+    ion-card.card.card-md {
+        height: 164px;
+        border-radius: 12px;
+        background-color: #101C6E;
+    }
+    .aling-center{
+        text-align: center;
+    }
+    ion-card.card-liberacao.card.card-md {
+        background-color: #9a9b9c94;
+        height: auto;
+        max-height: 500px;
+    }
+    ion-card-content, div{
+        overflow-y: scroll;
+    }
+    ion-card-title.card-title.card-title-md {
+        font-weight: 600;
+        font-size: 1em;
+        text-align: center;
+        padding: 0;
+    }
+   
+    ion-card-header.card-header.card-header-md {
+        padding: 8px 0 0 0;
+    }
+    p.status-liberacao{
+        font-size: 14px;
+        text-align: right;
+        color: #A70037;
+        font-weight: 600;
+        padding-top: 1em;
+
+    }
+ 
+    .color-white{
+        color: white;
+    }
+    .text-disponivel{
+        color: white;
+        text-align: center;
+        padding: 1.5em 0;
+        font-size: 1.4em;
+        font-weight: 600;
+        
+    }
+    img.icon-card{
+        width: 80%;
+        padding: 1em;
+    
+    }
+    .valor-venda{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    ion-scroll{
+        height: 300px;
+        
+    }
+    .hide{
+        display: none;
+    }
+ 
+}

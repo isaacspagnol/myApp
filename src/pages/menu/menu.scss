@@ -1,0 +1,22 @@
+page-menu {
+    .content-md {
+        color: #000!important;
+        background-color: #FFF!important;
+    }
+    button{
+        background: #f0f8ff00;
+    }
+    ion-card.card.card-md {
+        height: 154px;
+        border-radius: 12px;
+        background-color: #101C6E;
+    }
+    .aling-center{
+        text-align: center;
+    }
+    .btn-cadastro-incompleto{
+        background-color: #FFC801;
+        width: 100%;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,37 @@
+ion-item.item.item-block.item-md.item-select {
+    // z-index: -1;
+    border-radius: 12px;
+    background-color: #3e4989;
+}
+.item-md.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 1px solid #dedede00;
+}
+.label-md{
+    text-align: left;
+}
+
+.swiper-container.swiper-container-horizontal.swiper-container-android{
+    min-height: 380px;
+}
+ion-input{
+    width: 98%;
+}
+ion-select{
+    width: 98%;
+}
+.inline-flex{
+    display: inline-flex;
+}
+.margin-0{
+    margin: 0!important;
+}
+.pleft-5{
+    padding-left: 5px;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}

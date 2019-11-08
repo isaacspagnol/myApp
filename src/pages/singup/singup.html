@@ -1,0 +1,99 @@
+
+    <ion-header>
+      <ion-navbar>
+        <ion-title class="aling-center">
+          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
+        </ion-title>
+      </ion-navbar>
+    </ion-header>
+  <ion-content scroll="false" fullscreen>
+    <div class="ion-padding">
+      <h2 class="aling-center" >CADASTRO</h2>
+    </div>
+
+    <div padding>
+       <form action="">
+         <ion-slides pager>
+          <ion-slide>
+
+           <!-- INPUT NOME COMPLETO -->
+          <ion-label>Seu Nome Completo</ion-label>
+          <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
+
+          <!-- INPUT EMAIL-->
+          <ion-label>Seu E-mail</ion-label>
+          <ion-input type="text" placeholder="Digite seu e-mail"></ion-input>
+          
+          <!-- INPUT CPF -->
+          <ion-label>CPF</ion-label>
+          <ion-input type="text" placeholder="Digite seu CPF"></ion-input>
+
+          <!-- TIPO DE PARCEIRO -->
+          <ion-label>Tipo de Parceiro Loumar</ion-label>
+          <ion-item>
+            <ion-label>Selecionar</ion-label>
+            <ion-select multiple="true">
+              <ion-option>Motorista de Aplicativo</ion-option>
+              <ion-option>Taxista</ion-option>
+              <ion-option>Anfitriao</ion-option>
+              <ion-option>Airbnb</ion-option>
+              <ion-option>Recepcionista/Mensageiro</ion-option>
+            </ion-select>
+          </ion-item>
+          
+        <div padding id="continuarCadastro">
+            <button ion-button class=" btn-login">{{ 'CONTINUAR CADASTRO'}}</button>
+        </div>
+        <div padding>
+          <p>Etapa 1/2</p>
+        </div>
+
+          </ion-slide>
+        <ion-slide class="active" id="etapa-1"> 
+           <!-- INPUT TELEFONE WPP -->
+           <ion-label>Telefone/WhatsApp</ion-label>
+           <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
+          
+          <ion-grid padding>
+            <ion-row radio-group>
+              <ion-col class="inline-flex">
+                  <ion-radio class="MEI"></ion-radio>
+                  <ion-label class="MEI margin-0 pleft-5">Sou MEI</ion-label>
+              </ion-col>
+              <ion-col class="inline-flex">
+                  <ion-radio class="PisCheck"></ion-radio>
+                  <ion-label class="PisCheck margin-0 pleft-5">Nao sou MEI</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <div class="hide" id="CNPJ">
+            <ion-label>CNPJ</ion-label>
+            <ion-input type="text" placeholder="Digite seu CNPJ"></ion-input>
+          </div>
+          <div class="hide" id="PIS">
+            <ion-label>PIS</ion-label>
+            <ion-input type="text" placeholder="Digite seu PIS"></ion-input>
+          </div>      
+
+            <div padding class="inline-flex">
+                <ion-checkbox></ion-checkbox>
+                <ion-label class="margin-0 pleft-5">Li e aceito os Termos & Condicoes</ion-label>
+            </div>
+            <div padding id="continuarCadastro">
+                <button (click)="login()" ion-button class="  btn-login">{{ 'FINALIZAR CADASTRO'}}</button>
+            </div>
+            <div >
+                <p>Etapa 2/2</p>
+              </div>
+          </ion-slide>
+        </ion-slides>
+
+       </form>
+    </div>
+
+
+    <div padding>
+        <p class="aling-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>
+      </div>
+  </ion-content>
