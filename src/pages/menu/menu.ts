@@ -1,5 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, Nav, NavController } from 'ionic-angular';
+import * as $ from "jquery";
+
 
 interface PageItem {
   title: string
@@ -47,3 +49,15 @@ export class MenuPage {
   }
 }
 
+// $(document).ready(function(){
+//   var pisca = 1;
+
+//     if( pisca == 1 ){
+//       var pisca = 0;
+//       $(".btn-cadastro-incompleto").hide(800);
+//     } 
+//     if( pisca == 0){
+//       var pisca = 1;
+//       $(".btn-cadastro-incompleto").show(800);
+//     }
+// });

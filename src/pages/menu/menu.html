@@ -25,11 +25,25 @@
     <ion-content scroll="false">
         <ion-grid>
             <ion-row>
-               <ion-col>
-                  <div padding id="continuarCadastro">
-                      <button (click)="login()" ion-button class="btn-cadastro-incompleto">{{ 'CADASTRO INCOMPLETO'}}</button>
+                <ion-col>
+                    <div padding >
+                        <button (click)="login()" ion-button class="btn-cadastro-incompleto">{{ 'CADASTRO INCOMPLETO'}}
+                          <img src="./assets/img/Icon-hand-pointer.png" class="pleft-15">
+
+                        </button>
+                    </div>
+                 </ion-col>
+              <ion-col>
+                  <div >
+                    <p class="text-center font-600 font-1-5em text-uppercase">Seu codigo Loumar é:</p>
+                   <p class="text-center"> 
+                     <button ion-button class="codigo-loumar">
+                      734874387
+                    </button>
+                  </p>
                   </div>
-               </ion-col>
+              </ion-col>
+              
             </ion-row>
         </ion-grid>
       <div class="ion-padding">
