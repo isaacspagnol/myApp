@@ -23,5 +23,5 @@ export class WelcomePage {
   signup() {
     this.navCtrl.push('SingupPage');
   }
+  
 }
-

@@ -14,3 +14,45 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+h1{
+    font-weight: 700;
+}
+h2{
+    font-weight: 600;
+}
+p{
+    font-weight: 300;
+}
+.aling-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{ 
+    text-align: left;
+}
+.hide {
+    display: none;
+}
+.show{
+    display: block;
+}
+.color-white {
+    color: white;
+}
+.ptop-5 {padding-top: 5px;}
+.ptop-10{padding-top: 10px;}
+.ptop-12{padding-top: 12px;}
+.ptop-15{padding-top: 15px;}
+.ptop-20{padding-top: 20px;}
+.font-600{
+    font-weight: 600!important;
+}
+.font-800{
+    font-weight: 800!important;
+}
+.fit-content{
+    height: fit-content;
+} 

@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, Nav, NavController } from 'ionic-angular';
-import * as $ from "jquery";
+import { IonSegment } from '@ionic/angular';
+
 
 interface PageItem {
   title: string
@@ -13,83 +14,114 @@ type PageList = PageItem[]
   selector: 'page-minhacarteira',
   templateUrl: 'minhacarteira.html'
 })
-export class MinhacarteiraPage {
+export class MinhacarteiraPage{
   // A reference to the ion-nav in our component
   @ViewChild(Nav) nav: Nav;
+
 
   rootPage: any = 'ContentPage';
 
   pages: PageList;
   
- aguardandoLiberacao: any[];
+  vendas = [];
 
-  
- constructor(public navCtrl: NavController) {
-  this.aguardandoLiberacao = [
-      {
-        venda: {
-          date: '20/10/2019',
-          valor: 'R$ 60,19 ',
-          status: 'EM APROVACAO'
-        }        
+ 
+constructor(public navCtrl: NavController) {
+  this.estado = "disponivel";
+
+  this.vendas = [
+    {
+      venda: {
+        estado:"disponivel",
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
       },
-      {
-        venda: {
-          date: '20/10/2019',
-          valor: 'R$ 60,19 ',
-          status: 'EM APROVACAO'
-        }        
     },
-      {
-        venda: {
-          date: '20/10/2019',
-          valor: 'R$ 60,19 ',
-          status: 'EM APROVACAO'
-        }        
+
+    {
+      venda: {
+        estado:"disponivel",
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
     },
-      {
-        venda: {
-          date: '20/10/2019',
-          valor: 'R$ 60,19 ',
-          status: 'EM APROVACAO'
-        }        
+
+    {
+      venda: {
+        estado:"em espera",
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
+    },
+
+    {
+      venda: {
+        estado:"disponivel",
+
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
+    },
+
+    {
+      venda: {
+        estado:"disponivel",
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
     },
     {
       venda: {
-        date: '20/10/2019',
-        valor: 'R$ 60,19 ',
-        status: 'EM APROVACAO'
-      }       
-  },
-  {
-    venda: {
-      date: '20/10/2019',
-      valor: 'R$ 60,19 ',
-      status: 'EM APROVACAO'
-    }       
-},
-  
-{
-  venda: {
-    date: '20/10/2019',
-    valor: 'R$ 60,19 ',
-    status: 'EM APROVACAO'
-  }       
-},
-{
-  venda: {
-    date: '20/10/2019',
-    valor: 'R$ 60,19 ',
-    status: 'EM APROVACAO'
-  }       
-},  
-];
+        estado:"em espera",
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
+    },
+    {
+      venda: {
+        estado:"em espera",
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
+    },
+    {
+      venda: {
+        estado:"disponivel",
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
+    },
+    {
+      venda: {
+        estado:"disponivel",
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
+    }
 
+
+  ];
 }
 
-  ionViewDidLoad() {
-    console.log('Hello minhacarteira Page');
-  }
+  
+   segmentChanged(event){
+    const valorSegmento = event._value;
+    console.log(valorSegmento);
+   }
+
+  
+  segmentButtonClicked(ev: any) {
+    console.log('Segment button clicked', ev);
+  } 
 
   openPage(page: PageItem) {
     // Reset the content nav to have just this page
@@ -99,18 +131,22 @@ export class MinhacarteiraPage {
   Menu() {
     this.navCtrl.push('MenuPage');
   }
- 
-  showMore(){
-    this
+
+  doInfinite(): Promise<any> {
+    console.log('Begin async operation');
+
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        for (var i = 0; i < 30; i++) {
+          this.vendas.push( this.vendas.length );
+        }
+
+        console.log('Async operation has ended');
+        resolve();
+      }, 500);
+    })
   }
+
 }
 
-// $('#resgateDisponivel').click(function (e) {
-//   $('#resgateDisponivel').css('display', 'block');
-// });
 
-// function resgateDisponivel(event) {
-//   $(document).click(function resgateDisponivel(e){
-//     $('#resgateDisponivel').fadeIn(800);
-//     $('#stock').hide(300);
-// })]

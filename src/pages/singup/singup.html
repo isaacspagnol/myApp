@@ -9,11 +9,13 @@
   <ion-content scroll="false" fullscreen>
     <div class="ion-padding">
       <h2 class="aling-center" >CADASTRO</h2>
+      
     </div>
 
     <div padding>
+      
        <form action="">
-         <ion-slides pager>
+         <ion-slides>
           <ion-slide>
 
            <!-- INPUT NOME COMPLETO -->
@@ -42,30 +44,30 @@
           </ion-item>
           
         <div padding id="continuarCadastro">
-            <button ion-button class=" btn-login">{{ 'CONTINUAR CADASTRO'}}</button>
+            <button (click)="goToSlide()" ion-button class=" btn-login">{{ 'CONTINUAR CADASTRO'}}</button>
         </div>
         <div padding>
           <p>Etapa 1/2</p>
         </div>
 
           </ion-slide>
-        <ion-slide class="active" id="etapa-1"> 
+        <ion-slide> 
            <!-- INPUT TELEFONE WPP -->
            <ion-label>Telefone/WhatsApp</ion-label>
            <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
           
-          <ion-grid padding>
-            <ion-row radio-group>
-              <ion-col class="inline-flex">
-                  <ion-radio class="MEI"></ion-radio>
-                  <ion-label class="MEI margin-0 pleft-5">Sou MEI</ion-label>
-              </ion-col>
-              <ion-col class="inline-flex">
-                  <ion-radio class="PisCheck"></ion-radio>
-                  <ion-label class="PisCheck margin-0 pleft-5">Nao sou MEI</ion-label>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
+          <div class="pleft-0 ptop-16">
+              <ion-list radio-group class="inline-flex">
+                <ion-item>                
+                    <ion-radio class="MEI"></ion-radio>
+                    <ion-label class="MEI margin-0 pleft-5">Sou MEI</ion-label>
+                </ion-item>
+              <ion-item>
+                    <ion-radio id="pis-radio" class="PisCheck"></ion-radio>
+                    <ion-label class="PisCheck margin-0 pleft-5">Nao sou MEI</ion-label>
+              </ion-item>
+             </ion-list>   
+          </div>
 
           <div class="hide" id="CNPJ">
             <ion-label>CNPJ</ion-label>
@@ -76,16 +78,23 @@
             <ion-input type="text" placeholder="Digite seu PIS"></ion-input>
           </div>      
 
-            <div padding class="inline-flex">
-                <ion-checkbox></ion-checkbox>
+          <div class="pleft-0 ptop-16">
+            <ion-list  class="inline-flex">
+              <ion-item>                
+                  <ion-checkbox></ion-checkbox>
                 <ion-label class="margin-0 pleft-5">Li e aceito os Termos & Condicoes</ion-label>
-            </div>
+              </ion-item>
+           </ion-list>   
+          </div>
+            
             <div padding id="continuarCadastro">
                 <button (click)="login()" ion-button class="  btn-login">{{ 'FINALIZAR CADASTRO'}}</button>
             </div>
             <div >
+              
                 <p>Etapa 2/2</p>
               </div>
+              
           </ion-slide>
         </ion-slides>
 

@@ -25697,47 +25697,111 @@ ion-navbar.toolbar {
   min-height: 46px;
 }
 
-page-item-create .profile-image-wrapper {
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 300;
+}
+
+.aling-center {
   text-align: center;
-  margin: 20px 0;
 }
 
-page-item-create .profile-image-wrapper .profile-image {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.text-right {
+  text-align: right;
 }
 
-page-item-create .profile-image-wrapper .profile-image-placeholder {
-  display: inline-block;
-  background-color: #eee;
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  font-size: 12px;
+.text-left {
+  text-align: left;
 }
 
-page-item-create .profile-image-wrapper .profile-image-placeholder ion-icon {
-  font-size: 44px;
-  margin-bottom: -10px;
-  margin-top: 10px;
+.hide {
+  display: none;
 }
 
-page-item-detail .item-profile {
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
+.show {
+  display: block;
 }
 
-page-item-detail .item-detail {
-  width: 100%;
-  background: white;
-  position: absolute;
+.color-white {
+  color: white;
+}
+
+.ptop-5 {
+  padding-top: 5px;
+}
+
+.ptop-10 {
+  padding-top: 10px;
+}
+
+.ptop-12 {
+  padding-top: 12px;
+}
+
+.ptop-15 {
+  padding-top: 15px;
+}
+
+.ptop-20 {
+  padding-top: 20px;
+}
+
+.font-600 {
+  font-weight: 600 !important;
+}
+
+.font-800 {
+  font-weight: 800 !important;
+}
+
+.fit-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+page-cadastro-banco ion-content {
+  background-color: #F0F0F0 !important;
+}
+
+page-cadastro-banco h2 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+page-cadastro-banco ion-label.label.label-md {
+  color: black;
+  font-weight: 500;
+}
+
+page-cadastro-banco .input-cover {
+  border-radius: 12px;
+  background-color: #B6B6B6;
+  z-index: -1;
+}
+
+page-cadastro-banco ion-input input::-webkit-input-placeholder {
+  color: #fafafa !important;
+}
+
+page-cadastro-banco ion-input input::-moz-placeholder {
+  color: #fafafa !important;
+}
+
+page-cadastro-banco ion-input input::-ms-input-placeholder {
+  color: #fafafa !important;
+}
+
+page-cadastro-banco ion-input input::placeholder {
+  color: #fafafa !important;
 }
 
 page-menu .content-md {
@@ -25807,7 +25871,7 @@ page-menu .pleft-15 {
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
@@ -25819,7 +25883,7 @@ page-menu .pleft-15 {
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
@@ -25828,12 +25892,12 @@ page-menu .pleft-15 {
 
 page-menu .btn-cadastro-incompleto {
   -webkit-animation: btn-cadastro-incompleto 0.95s cubic-bezier(0.19, 1.27, 0.69, 1.78) infinite;
-  animation: btn-cadastro-incompleto 0.95s cubic-bezier(0.19, 1.27, 0.69, 1.78) infinite;
+  animation: btn-cadastro-incompleto 0.95s cubic-bezier(0.63, -0.01, 0.04, -0.26) infinite;
 }
 
 page-minhacarteira .content-md {
   color: #000 !important;
-  background-color: #FFF !important;
+  background-color: #F8F8F8 !important;
 }
 
 page-minhacarteira button {
@@ -25841,13 +25905,13 @@ page-minhacarteira button {
 }
 
 page-minhacarteira ion-card.card.card-md {
-  height: 164px;
+  background-color: #FFF;
+  -webkit-box-shadow: 3px 5px 15px #a59e9e52;
+  box-shadow: 3px 5px 15px #a59e9e52;
   border-radius: 12px;
-  background-color: #101C6E;
-}
-
-page-minhacarteira .aling-center {
-  text-align: center;
+  width: 100%;
+  height: 214px;
+  margin: 0;
 }
 
 page-minhacarteira ion-card.card-liberacao.card.card-md {
@@ -25856,60 +25920,152 @@ page-minhacarteira ion-card.card-liberacao.card.card-md {
   max-height: 500px;
 }
 
-page-minhacarteira ion-card-content, page-minhacarteira div {
-  overflow-y: scroll;
-}
-
 page-minhacarteira ion-card-title.card-title.card-title-md {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1em;
   text-align: center;
   padding: 0;
+  color: #4B4B4B;
 }
 
-page-minhacarteira ion-card-header.card-header.card-header-md {
-  padding: 8px 0 0 0;
+page-minhacarteira ion-card-header {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 16px 0 0px 30px !important;
 }
 
-page-minhacarteira p.status-liberacao {
-  font-size: 14px;
-  text-align: right;
-  color: #A70037;
-  font-weight: 600;
-  padding-top: 1em;
+page-minhacarteira img.check-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
 }
 
-page-minhacarteira .color-white {
-  color: white;
-}
-
-page-minhacarteira .text-disponivel {
-  color: white;
+page-minhacarteira #moeda {
+  position: absolute;
+  left: 28%;
+  top: 22%;
+  overflow: hidden;
+  width: 51px;
+  height: 34px;
   text-align: center;
-  padding: 1.5em 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  color: #4b4b4b;
+  font-weight: 900;
+}
+
+page-minhacarteira #valor {
+  position: absolute;
+  left: 42%;
+  top: 20%;
+  overflow: hidden;
+  width: 99px;
+  height: 52px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  color: #20d226;
+}
+
+page-minhacarteira #btn-resgate {
+  position: absolute;
+  width: 206px;
+  height: 42px;
+  left: 85px;
+  top: 32%;
+}
+
+page-minhacarteira ion-segment {
+  margin-top: 30px;
+}
+
+page-minhacarteira .segment-md .segment-button.activated, page-minhacarteira .segment-md .segment-button.segment-activated {
+  background-color: #00b0c1 !important;
+  border-radius: 12px;
+  color: white !important;
+  margin: 2px;
+  border-color: white;
+  margin: 2px;
+}
+
+page-minhacarteira ion-segment-button.segment-button {
+  color: black !important;
+  border-radius: 12px;
+  background-color: white !important;
+  border: none !important;
+  margin: 2px;
+  padding: 0;
+  text-align: center;
+}
+
+page-minhacarteira ion-label.label.label-md {
+  padding: 0 !important;
+  text-align: center;
+  margin: 0;
+}
+
+page-minhacarteira ion-card.card-vendas.card.card-md {
+  height: 100px;
+  margin: 20px 0;
+}
+
+page-minhacarteira .wallet-icon {
+  width: 45px;
+  height: 45px;
+}
+
+page-minhacarteira .comissao {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: #4B4B4B;
+}
+
+page-minhacarteira .ptop-10 {
+  padding-top: 10px;
+}
+
+page-minhacarteira .pbottom-10 {
+  padding-bottom: 10px;
+}
+
+page-minhacarteira .cVenda {
+  font-weight: 900;
   font-size: 1.4em;
-  font-weight: 600;
 }
 
-page-minhacarteira img.icon-card {
-  width: 80%;
-  padding: 1em;
+page-minhacarteira .cVenda span {
+  color: #20D226;
 }
 
-page-minhacarteira .valor-venda {
-  font-size: 1.5em;
-  font-weight: 500;
+page-minhacarteira .col-wallet-icon {
+  padding: 20px 2px;
 }
 
-page-minhacarteira ion-scroll {
-  height: 300px;
+page-minhacarteira .vTotal {
+  font-weight: 900;
+  color: rgba(75, 75, 75, 0.76);
 }
 
-page-minhacarteira .hide {
-  display: none;
+page-minhacarteira .nVenda {
+  color: rgba(75, 75, 75, 0.76);
+}
+
+page-minhacarteira .nVenda span {
+  font-weight: 300;
+}
+
+page-minhacarteira .vlVenda {
+  color: rgba(75, 75, 75, 0.76);
 }
 
 ion-item.item.item-block.item-md.item-select {
+  width: 98%;
   border-radius: 12px;
   background-color: #3e4989;
 }
@@ -25956,6 +26112,41 @@ ion-select {
 
 .hide {
   display: none;
+}
+
+ion-item.item.item-block.item-md.item-radio {
+  background: #3e4989;
+  color: white;
+  width: 160px;
+  margin: 0;
+  padding-left: 10px;
+  border-radius: 12px;
+  margin-right: 6px;
+}
+
+.list-md {
+  margin: 0;
+}
+
+.pleft-0 {
+  padding-left: 0;
+}
+
+.ptop-16 {
+  padding-top: 16px;
+}
+
+ion-item.item.item-block.item-md.item-checkbox {
+  color: white;
+  background: #101c6e0a;
+}
+
+ion-list.inline-flex.list.list-md {
+  width: 100%;
+}
+
+ion-checkbox.checkbox.checkbox-md {
+  margin: 5px !important;
 }
 
 page-tutorial .toolbar-background {

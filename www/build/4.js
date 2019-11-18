@@ -1,15 +1,15 @@
 webpackJsonp([4],{
 
-/***/ 335:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPageModule", function() { return SearchPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuPageModule", function() { return MenuPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__search__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu__ = __webpack_require__(338);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,38 +20,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SearchPageModule = /** @class */ (function () {
-    function SearchPageModule() {
+var MenuPageModule = /** @class */ (function () {
+    function MenuPageModule() {
     }
-    SearchPageModule = __decorate([
+    MenuPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__search__["a" /* SearchPage */],
+                __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__search__["a" /* SearchPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__search__["a" /* SearchPage */]
+                __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]
             ]
         })
-    ], SearchPageModule);
-    return SearchPageModule;
+    ], MenuPageModule);
+    return MenuPageModule;
 }());
 
-//# sourceMappingURL=search.module.js.map
+//# sourceMappingURL=menu.module.js.map
 
 /***/ }),
 
-/***/ 347:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -63,45 +62,58 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-var SearchPage = /** @class */ (function () {
-    function SearchPage(navCtrl, navParams, items) {
+var MenuPage = /** @class */ (function () {
+    function MenuPage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.items = items;
-        this.currentItems = [];
+        this.rootPage = 'ContentPage';
+        // used for an example of ngFor and navigation
+        this.pages = [
+            { title: 'Sign in', component: 'LoginPage' },
+            { title: 'Signup', component: 'SignupPage' }
+        ];
     }
-    /**
-     * Perform a service for the proper items.
-     */
-    SearchPage.prototype.getItems = function (ev) {
-        var val = ev.target.value;
-        if (!val || !val.trim()) {
-            this.currentItems = [];
-            return;
-        }
-        this.currentItems = this.items.query({
-            name: val
-        });
+    MenuPage.prototype.minhaCarteira = function () {
+        this.navCtrl.push('MinhacarteiraPage');
     };
-    /**
-     * Navigate to the detail page for this item.
-     */
-    SearchPage.prototype.openItem = function (item) {
-        this.navCtrl.push('ItemDetailPage', {
-            item: item
-        });
+    MenuPage.prototype.cadastroBanco = function () {
+        this.navCtrl.push('CadastroBancoPage');
     };
-    SearchPage = __decorate([
+    // signup() {
+    //   this.navCtrl.push('MenuPage');
+    // }
+    MenuPage.prototype.ionViewDidLoad = function () {
+        console.log('Hello MenuPage Page');
+    };
+    MenuPage.prototype.openPage = function (page) {
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        this.nav.setRoot(page.component);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
+    ], MenuPage.prototype, "nav", void 0);
+    MenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"C:\projetos\loumarParceiros\myApp\src\pages\search\search.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ \'SEARCH_TITLE\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ \'SEARCH_PLACEHOLDER\' | translate }}"></ion-searchbar>\n  <ion-list>\n    <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">\n      <ion-avatar item-start>\n        <img [src]="item.profilePic" />\n      </ion-avatar>\n      <h2>{{item.name}}</h2>\n      <p>{{item.about}}</p>\n      <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"C:\projetos\loumarParceiros\myApp\src\pages\search\search.html"*/
+            selector: 'page-menu',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\menu\menu.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="aling-center">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n\n\n    <ion-content scroll="false">\n        <ion-grid>\n            <ion-row>\n                <ion-col>\n                    <div padding >\n                        <button (click)="cadastroBanco()" ion-button class="btn-cadastro-incompleto">{{ \'CADASTRO INCOMPLETO\'}}\n                          <img src="./assets/img/Icon-hand-pointer.png" class="pleft-15">\n\n                        </button>\n                    </div>\n                 </ion-col>\n              <ion-col>\n                  <div >\n                    <p class="text-center font-600 font-1-5em text-uppercase">Seu codigo Loumar é:</p>\n                   <p class="text-center"> \n                     <button ion-button class="codigo-loumar">\n                      734874387\n                    </button>\n                  </p>\n                  </div>\n              </ion-col>\n              \n            </ion-row>\n        </ion-grid>\n      <div class="ion-padding">\n        <h2 class="aling-center" >SELECIONE UMA OPÇÃO</h2>\n      </div>\n      \n          <ion-grid>\n            \n            <ion-row>\n              <ion-col>\n                <div  (click)="minhaCarteira()" >\n                  <ion-card >\n                    <ion-card-content>\n                     <img src="./assets/img/cartera.png" alt="" srcset="">\n                    </ion-card-content>\n                  </ion-card>\n                  <p class="aling-center"><strong>MINHA CARTEIRA</strong></p>\n                </div>\n              </ion-col>\n              <ion-col>\n                <div> \n                   <ion-card>\n                    <ion-card-content>\n                        <img src="./assets/img/catalogo.png" alt="" srcset="">\n                    </ion-card-content>\n                  </ion-card>\n                  <p class="aling-center"><strong>CATALOGO</strong></p>\n                </div>\n              </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col>\n                  <div>\n                    <ion-card>\n                      <ion-card-content>\n                       <img src="./assets/img/pontos-de-vendas.png" alt="" srcset="">\n                      </ion-card-content>\n                    </ion-card>\n                    <p class="aling-center"><strong>PONTOS DE VENDAS</strong></p>\n                  </div>\n                </ion-col>\n                <ion-col>\n                  <div> \n                     <ion-card>\n                      <ion-card-content>\n                          <img src="./assets/img/hombre.png" alt="" srcset="">\n                      </ion-card-content>\n                    </ion-card>\n                    <p class="aling-center"><strong>PERFIL</strong></p>\n                  </div>\n                </ion-col>\n              </ion-row>\n            </ion-grid>\n      \n  \n    </ion-content>\n  '/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\menu\menu.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]])
-    ], SearchPage);
-    return SearchPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    ], MenuPage);
+    return MenuPage;
 }());
 
-//# sourceMappingURL=search.js.map
+// $(document).ready(function(){
+//   var pisca = 1;
+//     if( pisca == 1 ){
+//       var pisca = 0;
+//       $(".btn-cadastro-incompleto").hide(800);
+//     } 
+//     if( pisca == 0){
+//       var pisca = 1;
+//       $(".btn-cadastro-incompleto").show(800);
+//     }
+// }); 
+//# sourceMappingURL=menu.js.map
 
 /***/ })
 

@@ -33,6 +33,9 @@ export class MenuPage {
   minhaCarteira() {
     this.navCtrl.push('MinhacarteiraPage');
   }
+  cadastroBanco(){
+    this.navCtrl.push('CadastroBancoPage');
+  }
 
   // signup() {
   //   this.navCtrl.push('MenuPage');

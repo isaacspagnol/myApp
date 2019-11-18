@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import * as $ from "jquery";
+import { ViewChild } from '@angular/core';
+import { Slides } from 'ionic-angular';
+
+
 
 
 /**
@@ -15,7 +19,12 @@ import * as $ from "jquery";
   templateUrl: 'singup.html'
 })
 export class SingupPage {
+  @ViewChild(Slides) slides: Slides;
 
+  goToSlide() {
+    this.slides.slideTo(2, 500);
+  }
+  
   constructor(public navCtrl: NavController) { }
 
   login() {
@@ -42,6 +51,8 @@ $(document).ready(function(){
     $("#PIS").removeClass("hide");
   });
 });
-// $("#MEI").change(function(){
-//   $("#CNPJ").addClass("show");
+
+
+// $( "ion-label" ).on( "click", function() {
+//   $( "#pis-radio" ).html( $( "ion-radio:checked" ).val() + " " );
 // });

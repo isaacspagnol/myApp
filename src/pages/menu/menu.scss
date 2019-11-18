@@ -52,7 +52,7 @@ page-menu {
     @keyframes btn-cadastro-incompleto{
         0%   { opacity: 1; }
         
-        50%  { opacity: 0.5; }
+        50%  { opacity: 0.8; }
         
         100% { opacity: 1; }
     }
@@ -61,7 +61,7 @@ page-menu {
       -moz-animation:    btn-cadastro-incompleto .95s cubic-bezier(0.19, 1.27, 0.69, 1.78) infinite;
       -ms-animation:     btn-cadastro-incompleto .95s cubic-bezier(0.19, 1.27, 0.69, 1.78) infinite;
       -o-animation:      btn-cadastro-incompleto .95s cubic-bezier(0.19, 1.27, 0.69, 1.78) infinite;
-      animation:         btn-cadastro-incompleto .95s cubic-bezier(0.19, 1.27, 0.69, 1.78) infinite;
+      animation:        btn-cadastro-incompleto 0.95s cubic-bezier(0.63, -0.01, 0.04, -0.26) infinite;
 
    }
 }
