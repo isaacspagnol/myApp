@@ -29,7 +29,7 @@
             <strong>450</strong>
          </div>
          <div id="btn-resgate">
-            <button  ion-button class=" btn-login">{{ 'RESGATAR'}}</button>
+            <button (click)="presentPrompt()"  ion-button class=" btn-login">{{ 'RESGATAR'}}</button>
          </div>
     
       <ion-card-content>
@@ -38,38 +38,62 @@
 
    <div>
       <ion-segment  [(ngModel)]="estado" (ionChange)="segmentChanged($event)">
-         <ion-segment-button value="disponivel" >
+         <ion-segment-button value="disponivel" id="disponivel">
             <ion-label>DISPONIVEL</ion-label>
          </ion-segment-button>
 
-         <ion-segment-button value="em espera">
+         <ion-segment-button  value="em espera" id="emEspera">
             <ion-label>EM ESPERA</ion-label>
          </ion-segment-button>
 
       </ion-segment>
    </div>
+   <ion-list>
+      <ion-item>
+            <ion-card *ngFor="let item of vendasDisponiveis" class="card-vendas" >
+               <ion-grid>
+                  <ion-row>
+                     <ion-col col-2 class="col-wallet-icon">      
+                        <img class="wallet-icon" src="../assets/img/icon-wallet.png">
+                     </ion-col>
+                     <ion-col col-7>
+                           <h2 class="text-left comissao ptop-10">VALOR DA COMISSAO</h2>
+                           <h2 class="text-left vlVenda font-800">VALOR DA VENDA </h2>
+                           <p class="text-left nVenda font-800">VENDA N° <span>{{item.venda.nVenda}}</span></p>
+                     </ion-col>
+                     <ion-col col-3  class="fit-content ptop-10">
+                           <h2 class="text-right cVenda ptop-5 disponivel" >R$ <span>{{item.venda.cVenda}}</span></h2>
+                           <h2 class="text-right vTotal">R$ {{item.venda.vTotal}}</h2>
+                     </ion-col>
+                  </ion-row>
+               </ion-grid>
+            </ion-card>
+      </ion-item>
+   </ion-list>
 
-   <ion-card [ngSwitch]="estado" *ngFor="let item of vendas" class="card-vendas" >
-      <ion-grid>
-         <ion-row>
-            <ion-col col-2 class="col-wallet-icon">      
-               <img class="wallet-icon" src="../assets/img/icon-wallet.png">
-            </ion-col>
-            <ion-col col-7>
-                  <h2 class="text-left comissao ptop-10">VALOR DA COMISSAO</h2>
-                  <h2 class="text-left vlVenda font-800">VALOR DA VENDA </h2>
-                  <p class="text-left nVenda font-800">VENDA N° <span>{{item.venda.nVenda}}</span></p>
-            </ion-col>
-            <ion-col col-3  class="fit-content ptop-10">
-                  <h2 class="text-right cVenda ptop-5">R$ <span>{{item.venda.cVenda}}</span></h2>
-                  <h2 class="text-right vTotal">R$ {{item.venda.vTotal}}</h2>
-            </ion-col>
-         </ion-row>
-      </ion-grid>
-
-
-   </ion-card>
-
+   <ion-list>
+      <ion-item>
+            <ion-card [ngSwitch]="estado" *ngFor="let item of vendasEmEspera" class="card-vendas" >
+               <ion-grid>
+                  <ion-row>
+                     <ion-col col-2 class="col-wallet-icon">      
+                        <img class="wallet-icon" src="../assets/img/icon-wallet.png">
+                     </ion-col>
+                     <ion-col col-7>
+                           <h2 class="text-left comissao ptop-10">VALOR DA COMISSAO</h2>
+                           <h2 class="text-left vlVenda font-800">VALOR DA VENDA </h2>
+                           <p class="text-left nVenda font-800">VENDA N° <span>{{item.venda.nVenda}}</span></p>
+                     </ion-col>
+                     <ion-col col-3  class="fit-content ptop-10">
+                           <h2 class="text-right cVenda ptop-5">R$ <span>{{item.venda.cVenda}}</span></h2>
+                           <h2 class="text-right vTotal">R$ {{item.venda.vTotal}}</h2>
+                     </ion-col>
+                  </ion-row>
+               </ion-grid>
+            </ion-card>
+      </ion-item>
+   </ion-list>
+  
    
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
       <ion-infinite-scroll-content></ion-infinite-scroll-content>

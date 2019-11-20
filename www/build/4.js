@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 331:
+/***/ 330:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu__ = __webpack_require__(337);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -29,7 +29,7 @@ var MenuPageModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
@@ -44,7 +44,7 @@ var MenuPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 338:
+/***/ 337:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -90,14 +90,14 @@ var MenuPage = /** @class */ (function () {
         this.nav.setRoot(page.component);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */])
     ], MenuPage.prototype, "nav", void 0);
     MenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-menu',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\menu\menu.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="aling-center">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n\n\n    <ion-content scroll="false">\n        <ion-grid>\n            <ion-row>\n                <ion-col>\n                    <div padding >\n                        <button (click)="cadastroBanco()" ion-button class="btn-cadastro-incompleto">{{ \'CADASTRO INCOMPLETO\'}}\n                          <img src="./assets/img/Icon-hand-pointer.png" class="pleft-15">\n\n                        </button>\n                    </div>\n                 </ion-col>\n              <ion-col>\n                  <div >\n                    <p class="text-center font-600 font-1-5em text-uppercase">Seu codigo Loumar é:</p>\n                   <p class="text-center"> \n                     <button ion-button class="codigo-loumar">\n                      734874387\n                    </button>\n                  </p>\n                  </div>\n              </ion-col>\n              \n            </ion-row>\n        </ion-grid>\n      <div class="ion-padding">\n        <h2 class="aling-center" >SELECIONE UMA OPÇÃO</h2>\n      </div>\n      \n          <ion-grid>\n            \n            <ion-row>\n              <ion-col>\n                <div  (click)="minhaCarteira()" >\n                  <ion-card >\n                    <ion-card-content>\n                     <img src="./assets/img/cartera.png" alt="" srcset="">\n                    </ion-card-content>\n                  </ion-card>\n                  <p class="aling-center"><strong>MINHA CARTEIRA</strong></p>\n                </div>\n              </ion-col>\n              <ion-col>\n                <div> \n                   <ion-card>\n                    <ion-card-content>\n                        <img src="./assets/img/catalogo.png" alt="" srcset="">\n                    </ion-card-content>\n                  </ion-card>\n                  <p class="aling-center"><strong>CATALOGO</strong></p>\n                </div>\n              </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col>\n                  <div>\n                    <ion-card>\n                      <ion-card-content>\n                       <img src="./assets/img/pontos-de-vendas.png" alt="" srcset="">\n                      </ion-card-content>\n                    </ion-card>\n                    <p class="aling-center"><strong>PONTOS DE VENDAS</strong></p>\n                  </div>\n                </ion-col>\n                <ion-col>\n                  <div> \n                     <ion-card>\n                      <ion-card-content>\n                          <img src="./assets/img/hombre.png" alt="" srcset="">\n                      </ion-card-content>\n                    </ion-card>\n                    <p class="aling-center"><strong>PERFIL</strong></p>\n                  </div>\n                </ion-col>\n              </ion-row>\n            </ion-grid>\n      \n  \n    </ion-content>\n  '/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\menu\menu.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
     ], MenuPage);
     return MenuPage;
 }());

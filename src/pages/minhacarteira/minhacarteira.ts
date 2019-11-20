@@ -1,6 +1,10 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, Nav, NavController } from 'ionic-angular';
 import { IonSegment } from '@ionic/angular';
+import * as $ from "jquery";
+import { AlertController } from 'ionic-angular';
+
+
 
 
 interface PageItem {
@@ -23,16 +27,18 @@ export class MinhacarteiraPage{
 
   pages: PageList;
   
-  vendas = [];
+  vendasDisponiveis = [];
+  vendasEmEspera= [];
 
- 
-constructor(public navCtrl: NavController) {
+ estado = "disponivel";
+
+constructor(private alertCtrl: AlertController) {
   this.estado = "disponivel";
+  
 
-  this.vendas = [
+  this.vendasDisponiveis = [
     {
       venda: {
-        estado:"disponivel",
         nVenda: '34873987',
         cVenda: '32',
         vTotal: '62'
@@ -41,7 +47,6 @@ constructor(public navCtrl: NavController) {
 
     {
       venda: {
-        estado:"disponivel",
         nVenda: '34873987',
         cVenda: '32',
         vTotal: '62'
@@ -50,64 +55,36 @@ constructor(public navCtrl: NavController) {
 
     {
       venda: {
-        estado:"em espera",
-        nVenda: '34873987',
-        cVenda: '32',
-        vTotal: '62'
-      }, 
-    },
-
-    {
-      venda: {
-        estado:"disponivel",
-
-        nVenda: '34873987',
-        cVenda: '32',
-        vTotal: '62'
-      }, 
-    },
-
-    {
-      venda: {
-        estado:"disponivel",
-        nVenda: '34873987',
-        cVenda: '32',
-        vTotal: '62'
-      }, 
-    },
-    {
-      venda: {
-        estado:"em espera",
-        nVenda: '34873987',
-        cVenda: '32',
-        vTotal: '62'
-      }, 
-    },
-    {
-      venda: {
-        estado:"em espera",
-        nVenda: '34873987',
-        cVenda: '32',
-        vTotal: '62'
-      }, 
-    },
-    {
-      venda: {
-        estado:"disponivel",
-        nVenda: '34873987',
-        cVenda: '32',
-        vTotal: '62'
-      }, 
-    },
-    {
-      venda: {
-        estado:"disponivel",
         nVenda: '34873987',
         cVenda: '32',
         vTotal: '62'
       }, 
     }
+  ];
+  this.vendasEmEspera = [
+    {
+      venda: {
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      },
+    },
 
+    {
+      venda: {
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
+    },
+
+    {
+      venda: {
+        nVenda: '34873987',
+        cVenda: '32',
+        vTotal: '62'
+      }, 
+    },
 
   ];
 }
@@ -117,6 +94,7 @@ constructor(public navCtrl: NavController) {
     const valorSegmento = event._value;
     console.log(valorSegmento);
    }
+   
 
   
   segmentButtonClicked(ev: any) {
@@ -138,7 +116,8 @@ constructor(public navCtrl: NavController) {
     return new Promise((resolve) => {
       setTimeout(() => {
         for (var i = 0; i < 30; i++) {
-          this.vendas.push( this.vendas.length );
+          this.vendasDisponiveis.push( this.vendasDisponiveis.length );
+          this.vendasEmEspera.push( this.vendasEmEspera.length );
         }
 
         console.log('Async operation has ended');
@@ -146,7 +125,50 @@ constructor(public navCtrl: NavController) {
       }, 500);
     })
   }
+  presentPrompt() {
+    
+    let alert = this.alertCtrl.create({
+      title: 'VALIDE O N° DA NOTA FISCAL',
+      subTitle: 'INSIRA O NUMERO DA NOTA ABAIXO',
+      inputs: [
+        {
+          name: 'nDaNota',
+          placeholder: 'Numero da nota',
+          max:'4',
+          id: 'maxLength20',
+          type: 'number',
+        },
+      ],
+     
+      buttons: [
+        {
+          text: 'Validar Nota',
+          role: 'Validar Nota',
+          handler: data => {
+            console.log('Validar clicked');
+          }
+        },
+
+        // {
+        //   text: 'Login',
+        //   handler: data => {
+        //     if (User.isValid(data.username, data.password)) {
+        //       // logged in!
+        //     } else {
+        //       // invalid login
+        //       return false;
+        //     }
+        //   }
+        // }
+      ]
+    });
+
+    alert.present().then(result =>{document.getElementById('maxLength20').setAttribute('maxlength','20')});
+  }
 
 }
+
+
+
 
 
