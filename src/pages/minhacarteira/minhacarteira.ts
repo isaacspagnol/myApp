@@ -3,6 +3,7 @@ import { IonicPage, Nav, NavController } from 'ionic-angular';
 import { IonSegment } from '@ionic/angular';
 import * as $ from "jquery";
 import { AlertController } from 'ionic-angular';
+import { LoadingController } from '@ionic/angular';
 
 
 
@@ -32,7 +33,10 @@ export class MinhacarteiraPage{
 
  estado = "disponivel";
 
-constructor(private alertCtrl: AlertController) {
+constructor(
+  private alertCtrl: AlertController,
+  public  navCtrl: NavController
+  ) {
   this.estado = "disponivel";
   
 
@@ -89,7 +93,7 @@ constructor(private alertCtrl: AlertController) {
   ];
 }
 
-  
+
    segmentChanged(event){
     const valorSegmento = event._value;
     console.log(valorSegmento);
@@ -125,45 +129,63 @@ constructor(private alertCtrl: AlertController) {
       }, 500);
     })
   }
-  presentPrompt() {
-    
+  validarNota() {
     let alert = this.alertCtrl.create({
-      title: 'VALIDE O N° DA NOTA FISCAL',
+      title: 'VALIDE N° DA NOTA FISCAL',
       subTitle: 'INSIRA O NUMERO DA NOTA ABAIXO',
       inputs: [
         {
-          name: 'nDaNota',
-          placeholder: 'Numero da nota',
-          max:'4',
-          id: 'maxLength20',
-          type: 'number',
+          name: 'NmNota',
+          placeholder: 'N° da nota'
         },
+        
       ],
-     
       buttons: [
         {
-          text: 'Validar Nota',
-          role: 'Validar Nota',
+          text: 'VALIDAR NOTA',
+          role: 'VALIDAR NOTA',
           handler: data => {
-            console.log('Validar clicked');
+            console.log('VALIDAR NOTA CLICKED');
           }
         },
-
-        // {
-        //   text: 'Login',
-        //   handler: data => {
-        //     if (User.isValid(data.username, data.password)) {
-        //       // logged in!
-        //     } else {
-        //       // invalid login
-        //       return false;
-        //     }
-        //   }
-        // }
       ]
     });
+    alert.present();
+  }
 
-    alert.present().then(result =>{document.getElementById('maxLength20').setAttribute('maxlength','20')});
+  validandoNota() {
+    let alert = this.alertCtrl.create({
+      title: 'VALIDANDO NOTA ',
+      // subTitle: 'INSIRA O NUMERO DA NOTA ABAIXO',
+      
+      buttons: [
+        {
+          text: 'VERIFICANDO ',
+          role: 'VALIDAR NOTA',
+          handler: data => {
+            console.log('VALIDAR NOTA CLICKED');
+          }
+        },
+      ]
+    });
+    alert.present();
+  }
+
+  notavalidada() {
+    let alert = this.alertCtrl.create({
+      title: 'Nota validada',
+      subTitle:'<img src="./assets/img/check.png">',
+      buttons: [
+        {
+          text: 'VER RESUMO DA COMPRA ',
+          role: 'VALIDAR NOTA',
+          handler: data => {
+            this.navCtrl.push('resumoPage');
+          }
+        },
+      ]
+    });
+    alert.present();
   }
 
 }

@@ -3,6 +3,10 @@ page-menu {
         color: #000!important;
         background-color: #FFF!important;
     }
+    .content-ios {
+        color: #000!important;
+        background-color: #FFF!important;
+    }
     button{
         background: #f0f8ff00;
     }
@@ -11,9 +15,12 @@ page-menu {
         border-radius: 12px;
         background-color: #101C6E;
     }
-    .aling-center{
-        text-align: center;
+    ion-card.card.card-ios {
+        height: 154px;
+        border-radius: 12px;
+        background-color: #101C6E;
     }
+    
     .btn-cadastro-incompleto{
         background-color: rgba(255, 200, 1, 0.671);
         width: 100%;

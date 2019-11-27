@@ -1,40 +1,48 @@
 
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap');
-h2{
-  font-family: 'Roboto', sans-serif;
-  font-weight: black;
-}
-p{
-  font-family: 'Roboto', sans-serif;
-  font-weight:100;
-}
-.content-md {
-  color: #fff;
-  background-color: #101C6E;
-}
-.aling-center{
-  text-align: center;
-}
-.toolbar-background-md {
-  border-color: #00B0C1;
-  background: #00B0C1;
-}
-.btn-entrar{
-background-color: #1834D8;
-border-radius: 12px;
-}
-.btn-login{
-  background-color: #43D935;
+page-welcome{
+  .content-md {
+    color: #fff;
+    background-color: #101C6E;
+  }
+  .content-ios{
+    background: #101C6E;
+    color:#fff;
+  }
+  .aling-center{
+    text-align: center;
+  }
+  .toolbar-background-md {
+    border-color: #00B0C1;
+    background: #00B0C1;
+  }
+  .toolbar-background-ios {
+    border-color: #00B0C1;
+    background: #00B0C1;
+  }
+  .btn-entrar{
+  background-color: #1834D8;
   border-radius: 12px;
-  margin: 10px  0 -20px 0;
-  width: 100%;
+  }
+  .btn-login{
+    background-color: #43D935;
+    border-radius: 12px;
+    margin: 10px  0 -20px 0;
+    width: 100%;
+  }
+  .input-cover {
+    border-radius: 12px;
+    background-color: #3E4989;
+    z-index: -1;
+  }
+  .label-md {
+    margin: 13px 8px 4px 9px;
+  }
+  .label-ios {
+    margin: 13px 8px 4px 9px;
+  }
+  ion-input.input.input-ios{
+    border-radius: 12px;
+    background-color: #3E4989;
+    z-index: -1;
 }
-.input-cover {
-  border-radius: 12px;
-  background-color: #3E4989;
-  z-index: -1;
-}
-.label-md {
-  margin: 13px 8px 4px 9px;
 }

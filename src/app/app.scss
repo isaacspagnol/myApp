@@ -14,15 +14,14 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
-h1{
-    font-weight: 700;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap');
 h2{
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: black;
 }
 p{
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
 }
 .aling-center{
     text-align: center;
@@ -56,3 +55,23 @@ p{
 .fit-content{
     height: fit-content;
 } 
+.toolbar-background-md, .header {
+    border-color: #00B0C1;
+    background: #00B0C1;
+}
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios{
+    border-color: #00B0C1;
+    background: #00B0C1;
+    top: 40px;
+}
+
+.btn-login{
+    background-color: #43D935;
+    border-radius: 12px;
+    margin: 10px  0 -20px 0;
+    width: 100%;
+  }
+  .list-ios > .item-block:first-child{
+      border-top: none;
+      border:none;
+  }
