@@ -21,4 +21,12 @@ page-cadastro-banco {
           color:#fafafa!important;
         }
       }
+      .input, .input-ios{
+        background-color: #B6B6B6;
+        border-radius: 12px;
+      }
+      ion-label.label.label-ios{
+          color: #000;
+          font-weight: 600;
+      }
 }

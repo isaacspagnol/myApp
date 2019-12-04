@@ -60,7 +60,7 @@ page-minhacarteira {
 	}
 	ion-card-header {
 		display: inline-flex;
-		padding: 16px 0 0px 30px!important;
+		padding: 16px 0 0px 16px!important;
 	}
 	img.check-icon {
 		width: 22px;
@@ -211,7 +211,6 @@ page-minhacarteira {
 
 @media (max-width:320px) {
     page-minhacarteira ion-card-header {
-       
         display: inline-flex;
         padding: 16px 0 0px 14px !important;
     }
@@ -545,8 +544,8 @@ page-minhacarteira {
         top: 16%;
     }
     page-minhacarteira #btn-resgate {
-        left: 90px;
-        top: 28%;
+        left: 20%;
+        top: 30%;
     }
     .alert-md .alert-title {
         font-size: 1.2em;
@@ -669,5 +668,11 @@ page-minhacarteira {
         border-radius: 18px;
         padding: 10px;
         background: #E2E2E2;
+    }
+    page-minhacarteira ion-card-title.card-title.card-title-md{
+        font-size: 0.9em;
+    }
+    page-minhacarteira ion-card-title.card-title.card-title-ios{
+        font-size: 0.9em;
     }
 }

@@ -1,10 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, Nav, NavController } from 'ionic-angular';
 import { IonSegment } from '@ionic/angular';
-import * as $ from "jquery";
 import { AlertController } from 'ionic-angular';
-import { LoadingController } from '@ionic/angular';
-
 
 
 
@@ -36,7 +33,7 @@ export class MinhacarteiraPage{
 constructor(
   private alertCtrl: AlertController,
   public  navCtrl: NavController
-  ) {
+    ) {
   this.estado = "disponivel";
   
 
@@ -153,24 +150,6 @@ constructor(
     alert.present();
   }
 
-  validandoNota() {
-    let alert = this.alertCtrl.create({
-      title: 'VALIDANDO NOTA ',
-      // subTitle: 'INSIRA O NUMERO DA NOTA ABAIXO',
-      
-      buttons: [
-        {
-          text: 'VERIFICANDO ',
-          role: 'VALIDAR NOTA',
-          handler: data => {
-            console.log('VALIDAR NOTA CLICKED');
-          }
-        },
-      ]
-    });
-    alert.present();
-  }
-
   notavalidada() {
     let alert = this.alertCtrl.create({
       title: 'Nota validada',
@@ -178,15 +157,16 @@ constructor(
       buttons: [
         {
           text: 'VER RESUMO DA COMPRA ',
-          role: 'VALIDAR NOTA',
+          role: 'NOTA VALIDADA',
           handler: data => {
-            this.navCtrl.push('resumoPage');
+            this.navCtrl.push('ResumoPage');
           }
         },
       ]
     });
     alert.present();
   }
+
 
 }
 

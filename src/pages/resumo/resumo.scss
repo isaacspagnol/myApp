@@ -1,3 +1,76 @@
 page-resumo {
-
+    h2{
+        color: #000;
+        font-weight: 600;
+    }
+    .content-ios{
+        background-color: #FFF;
+    }
+    .content-md{
+        background-color: #FFF;
+    }
+    .item-ios{
+        background: white;
+    }
+    .item-md{
+        background: white;
+    }
+    .card-ios, .card-comissao{
+        background: white;
+        box-shadow:rgba(146, 146, 146, 0.28) 4px 5px 6px 0px;
+        border-radius: 12px;
+    }
+    img.check-icon {
+        width: 22px;
+        height: 22px;
+        margin-right: 16px;
+        margin-top: 12px;
+    }
+    img.saque-icons{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    
+    .card-resumoResgate{
+        box-shadow: none;
+    }
+	
+	img.check-icon {
+		width: 22px;
+		height: 22px;
+		margin-right: 10px;
+	}
+    .icon-saque{
+        width: 180px;
+        margin-left: 18%;
+    }   
+    .after-icon{
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .wallet-icon{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .ptop-10{
+        padding-top: 10px;
+    }
+    
+    .pbottom-10{
+        padding-bottom: 10px;
+    }
+    .center-element{
+        width: 90%;
+        margin: 0 6%;
+        display:inline-flex;
+    }
+    .align-center{
+        text-align: center;
+    }
+    
 }

@@ -20,7 +20,7 @@
    <ion-card class="card-minhaCarteira">
       <ion-card-header>
          <img src="./assets/img/check-circle.png" class="check-icon">
-         <ion-card-title> VALOR DISPONIVEL PARA SAQUE</ion-card-title>
+         <ion-card-title> RESGATE REALIZADO COM SUCESSO!</ion-card-title>
       </ion-card-header>
       <ion-card-content>
          <div id="moeda">
@@ -36,9 +36,7 @@
       </ion-card-content>
     </ion-card>
 
-    <div padding>
-         <button (click)="validandoNota()"  ion-button class=" btn-login ">{{ 'VALIDANDO NOTA'}}</button>
-      </div>
+   
       <div padding>
          <button (click)="notavalidada()"  ion-button class=" btn-login ">{{ 'NOTA VALIDADA'}}</button>
       </div>
@@ -77,29 +75,8 @@
       </ion-item>
    </ion-list>
 
-   <ion-list>
-      <ion-item>
-            <ion-card [ngSwitch]="estado" *ngFor="let item of vendasEmEspera" class="card-vendas" >
-               <ion-grid>
-                  <ion-row>
-                     <ion-col col-2 class="col-wallet-icon">      
-                        <img class="wallet-icon" src="../assets/img/icon-wallet.png">
-                     </ion-col>
-                     <ion-col col-7>
-                           <h2 class="text-left comissao ptop-10">VALOR DA COMISSAO</h2>
-                           <h2 class="text-left vlVenda font-800">VALOR DA VENDA </h2>
-                           <p class="text-left nVenda font-800">VENDA N° <span>{{item.venda.nVenda}}</span></p>
-                     </ion-col>
-                     <ion-col col-3  class="fit-content ptop-10">
-                           <h2 class="text-right cVenda ptop-5">R$ <span>{{item.venda.cVenda}}</span></h2>
-                           <h2 class="text-right vTotal">R$ {{item.venda.vTotal}}</h2>
-                     </ion-col>
-                  </ion-row>
-               </ion-grid>
-            </ion-card>
-      </ion-item>
-   </ion-list>
-  
+
+
    
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
       <ion-infinite-scroll-content></ion-infinite-scroll-content>

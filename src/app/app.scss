@@ -15,6 +15,12 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap');
+body{
+    margin: 0;
+}
+ion-header{
+    padding: 16px 0 0 0;
+}
 h2{
     font-family: 'Roboto', sans-serif;
     font-weight: black;
@@ -37,6 +43,9 @@ p{
 }
 .show{
     display: block;
+}
+.display-inline-flex{
+    display: inline-flex;
 }
 .color-white {
     color: white;
@@ -75,3 +84,7 @@ p{
       border-top: none;
       border:none;
   }
+  .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: #000000;
+    background-color: transparent;
+}

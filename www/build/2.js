@@ -1,15 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 332:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MinhacarteiraPageModule", function() { return MinhacarteiraPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResumoPageModule", function() { return ResumoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__minhacarteira__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__resumo__ = __webpack_require__(338);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,36 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var MinhacarteiraPageModule = /** @class */ (function () {
-    function MinhacarteiraPageModule() {
+var ResumoPageModule = /** @class */ (function () {
+    function ResumoPageModule() {
     }
-    MinhacarteiraPageModule = __decorate([
+    ResumoPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__minhacarteira__["a" /* MinhacarteiraPage */],
+                __WEBPACK_IMPORTED_MODULE_2__resumo__["a" /* ResumoPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__minhacarteira__["a" /* MinhacarteiraPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__resumo__["a" /* ResumoPage */]),
             ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__minhacarteira__["a" /* MinhacarteiraPage */]
-            ]
         })
-    ], MinhacarteiraPageModule);
-    return MinhacarteiraPageModule;
+    ], ResumoPageModule);
+    return ResumoPageModule;
 }());
 
-//# sourceMappingURL=minhacarteira.module.js.map
+//# sourceMappingURL=resumo.module.js.map
 
 /***/ }),
 
-/***/ 339:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MinhacarteiraPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResumoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -62,162 +56,64 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-var MinhacarteiraPage = /** @class */ (function () {
-    function MinhacarteiraPage(alertCtrl, navCtrl) {
-        this.alertCtrl = alertCtrl;
+var ResumoPage = /** @class */ (function () {
+    function ResumoPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
-        this.rootPage = 'ContentPage';
-        this.vendasDisponiveis = [];
-        this.vendasEmEspera = [];
-        this.estado = "disponivel";
-        this.estado = "disponivel";
-        this.vendasDisponiveis = [
+        this.navParams = navParams;
+        this.comissao = [];
+        this.comissao = [
             {
-                venda: {
-                    nVenda: '34873987',
-                    cVenda: '32',
-                    vTotal: '62'
+                comissao: {
+                    nmNota: '34873987',
+                    vData: '1/12/2029',
+                    vComissao: '15,00'
                 },
             },
             {
-                venda: {
-                    nVenda: '34873987',
-                    cVenda: '32',
-                    vTotal: '62'
+                comissao: {
+                    nmNota: '34873987',
+                    vData: '1/12/2029',
+                    vComissao: '15,00'
                 },
             },
             {
-                venda: {
-                    nVenda: '34873987',
-                    cVenda: '32',
-                    vTotal: '62'
-                },
+                comissao: {
+                    nmNota: '34873987',
+                    vData: '1/12/2029',
+                    vComissao: '15,00'
+                }
             }
         ];
-        this.vendasEmEspera = [
-            {
-                venda: {
-                    nVenda: '34873987',
-                    cVenda: '32',
-                    vTotal: '62'
-                },
-            },
-            {
-                venda: {
-                    nVenda: '34873987',
-                    cVenda: '32',
-                    vTotal: '62'
-                },
-            },
-            {
-                venda: {
-                    nVenda: '34873987',
-                    cVenda: '32',
-                    vTotal: '62'
-                },
-            },
-        ];
     }
-    MinhacarteiraPage.prototype.segmentChanged = function (event) {
-        var valorSegmento = event._value;
-        console.log(valorSegmento);
+    ResumoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ResumoPage');
     };
-    MinhacarteiraPage.prototype.segmentButtonClicked = function (ev) {
-        console.log('Segment button clicked', ev);
-    };
-    MinhacarteiraPage.prototype.openPage = function (page) {
-        // Reset the content nav to have just this page
-        // we wouldn't want the back button to show in this scenario
-        this.nav.setRoot(page.component);
-    };
-    MinhacarteiraPage.prototype.Menu = function () {
+    ResumoPage.prototype.Menu = function () {
         this.navCtrl.push('MenuPage');
     };
-    MinhacarteiraPage.prototype.doInfinite = function () {
+    ResumoPage.prototype.doInfinite = function () {
         var _this = this;
         console.log('Begin async operation');
         return new Promise(function (resolve) {
             setTimeout(function () {
                 for (var i = 0; i < 30; i++) {
-                    _this.vendasDisponiveis.push(_this.vendasDisponiveis.length);
-                    _this.vendasEmEspera.push(_this.vendasEmEspera.length);
+                    _this.comissao.push(_this.comissao.length);
                 }
                 console.log('Async operation has ended');
                 resolve();
             }, 500);
         });
     };
-    MinhacarteiraPage.prototype.validarNota = function () {
-        var alert = this.alertCtrl.create({
-            title: 'VALIDE N° DA NOTA FISCAL',
-            subTitle: 'INSIRA O NUMERO DA NOTA ABAIXO',
-            inputs: [
-                {
-                    name: 'NmNota',
-                    placeholder: 'N° da nota'
-                },
-            ],
-            buttons: [
-                {
-                    text: 'VALIDAR NOTA',
-                    role: 'VALIDAR NOTA',
-                    handler: function (data) {
-                        console.log('VALIDAR NOTA CLICKED');
-                    }
-                },
-            ]
-        });
-        alert.present();
-    };
-    MinhacarteiraPage.prototype.validandoNota = function () {
-        var alert = this.alertCtrl.create({
-            title: 'VALIDANDO NOTA ',
-            // subTitle: 'INSIRA O NUMERO DA NOTA ABAIXO',
-            buttons: [
-                {
-                    text: 'VERIFICANDO ',
-                    role: 'VALIDAR NOTA',
-                    handler: function (data) {
-                        console.log('VALIDAR NOTA CLICKED');
-                    }
-                },
-            ]
-        });
-        alert.present();
-    };
-    MinhacarteiraPage.prototype.notavalidada = function () {
-        var _this = this;
-        var alert = this.alertCtrl.create({
-            title: 'Nota validada',
-            subTitle: '<img src="./assets/img/check.png">',
-            buttons: [
-                {
-                    text: 'VER RESUMO DA COMPRA ',
-                    role: 'VALIDAR NOTA',
-                    handler: function (data) {
-                        _this.navCtrl.push('resumoPage');
-                    }
-                },
-            ]
-        });
-        alert.present();
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]) === "function" && _a || Object)
-    ], MinhacarteiraPage.prototype, "nav", void 0);
-    MinhacarteiraPage = __decorate([
+    ResumoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-minhacarteira',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\minhacarteira\minhacarteira.html"*/'<ion-header class="header">\n    <ion-navbar>\n       <ion-title class="aling-center">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n       </ion-title>\n       <ion-buttons end>\n          <button  (click)="Menu()">\n          <img src="./assets/img/home.png" alt="" style="max-height: 15px;" srcset="">\n          </button>\n       </ion-buttons>\n    </ion-navbar>\n </ion-header>\n <ion-content scroll="true" padding>\n   <div class="ion-padding">\n     <h2 class="aling-center" >MINHA CARTEIRA</h2>\n   </div>\n\n\n\n   <ion-card class="card-minhaCarteira">\n      <ion-card-header>\n         <img src="./assets/img/check-circle.png" class="check-icon">\n         <ion-card-title> VALOR DISPONIVEL PARA SAQUE</ion-card-title>\n      </ion-card-header>\n      <ion-card-content>\n         <div id="moeda">\n            <strong>R$</strong>\n         </div>\n         <div id="valor">\n            <strong>450</strong>\n         </div>\n         <div id="btn-resgate">\n            <button (click)="validarNota()"  ion-button class=" btn-login">{{ \'RESGATAR\'}}</button>\n         </div>\n         \n      </ion-card-content>\n    </ion-card>\n\n    <div padding>\n         <button (click)="validandoNota()"  ion-button class=" btn-login ">{{ \'VALIDANDO NOTA\'}}</button>\n      </div>\n      <div padding>\n         <button (click)="notavalidada()"  ion-button class=" btn-login ">{{ \'NOTA VALIDADA\'}}</button>\n      </div>\n   <div>\n      <ion-segment  [(ngModel)]="estado" (ionChange)="segmentChanged($event)">\n         <ion-segment-button value="disponivel" id="disponivel">\n            <ion-label>DISPONIVEL</ion-label>\n         </ion-segment-button>\n\n         <ion-segment-button  value="em espera" id="emEspera">\n            <ion-label>EM ESPERA</ion-label>\n         </ion-segment-button>\n\n      </ion-segment>\n   </div>\n   <ion-list>\n      <ion-item>\n            <ion-card *ngFor="let item of vendasDisponiveis" class="card-vendas" >\n               <ion-grid>\n                  <ion-row>\n                     <ion-col col-2 class="col-wallet-icon">      \n                        <img class="wallet-icon" src="../assets/img/icon-wallet.png">\n                     </ion-col>\n                     <ion-col col-7>\n                           <h2 class="text-left comissao ptop-10">VALOR DA COMISSAO</h2>\n                           <h2 class="text-left vlVenda font-800">VALOR DA VENDA </h2>\n                           <p class="text-left nVenda font-800">VENDA N° <span>{{item.venda.nVenda}}</span></p>\n                     </ion-col>\n                     <ion-col col-3  class="fit-content ptop-10">\n                           <h2 class="text-right cVenda ptop-5 disponivel" >R$ <span>{{item.venda.cVenda}}</span></h2>\n                           <h2 class="text-right vTotal">R$ {{item.venda.vTotal}}</h2>\n                     </ion-col>\n                  </ion-row>\n               </ion-grid>\n            </ion-card>\n      </ion-item>\n   </ion-list>\n\n   <ion-list>\n      <ion-item>\n            <ion-card [ngSwitch]="estado" *ngFor="let item of vendasEmEspera" class="card-vendas" >\n               <ion-grid>\n                  <ion-row>\n                     <ion-col col-2 class="col-wallet-icon">      \n                        <img class="wallet-icon" src="../assets/img/icon-wallet.png">\n                     </ion-col>\n                     <ion-col col-7>\n                           <h2 class="text-left comissao ptop-10">VALOR DA COMISSAO</h2>\n                           <h2 class="text-left vlVenda font-800">VALOR DA VENDA </h2>\n                           <p class="text-left nVenda font-800">VENDA N° <span>{{item.venda.nVenda}}</span></p>\n                     </ion-col>\n                     <ion-col col-3  class="fit-content ptop-10">\n                           <h2 class="text-right cVenda ptop-5">R$ <span>{{item.venda.cVenda}}</span></h2>\n                           <h2 class="text-right vTotal">R$ {{item.venda.vTotal}}</h2>\n                     </ion-col>\n                  </ion-row>\n               </ion-grid>\n            </ion-card>\n      </ion-item>\n   </ion-list>\n  \n   \n    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">\n      <ion-infinite-scroll-content></ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n   \n</ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\minhacarteira\minhacarteira.html"*/
+            selector: 'page-resumo',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\resumo\resumo.html"*/'<ion-header class="header">\n  <ion-navbar>\n     <ion-title class="aling-center">\n        <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n     </ion-title>\n     <ion-buttons end>\n        <button  (click)="Menu()">\n        <img src="./assets/img/home.png" alt="" style="max-height: 15px;" srcset="">\n        </button>\n     </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content scroll="true" >\n <div class="ion-padding">\n   <h2 class="aling-center">MINHA CARTEIRA</h2>\n </div>\n\n   <div padding class="display-inline-flex center-element">\n      <img src="./assets/img/check-circle.png" class="check-icon">\n      <p class="align-center">RESGATE REALIZADO COM SUCESSO!</p>\n   \n   </div>     \n   <div padding>\n      <img src="./assets/img/saque-icons.png" class="saque-icons" alt="">\n      <p class="align-center">VALOR DISPONÍVEL NA CONTA EM ATÉ 24HR</p>\n   </div> \n   \n   <div>\n      <h3 class="aling-center">COMISSÃO</h3>\n   </div>\n\n      <ion-list>\n         <ion-item>\n               <ion-card  *ngFor="let item of comissao" class="card-comissao" >\n                  <ion-grid>\n                     <ion-row>\n                        <ion-col col-2 class="col-wallet-icon">      \n                           <img class="wallet-icon" src="../assets/img/icon-wallet.png">\n                        </ion-col>\n                        <ion-col col-7>\n                              <h2 class="text-left font-800">N° {{item.comissao.nmNota}} </h2>\n                              <p class="text-left font-300">{{item.comissao.vData}}</p>\n                        </ion-col>\n                        <ion-col col-3 class="fit-content ptop-10">\n                              <h2 class="text-right font-800">R${{item.comissao.vComissao}}</h2>\n                        </ion-col>\n                     </ion-row>\n                  </ion-grid>\n               </ion-card>\n         </ion-item>\n      </ion-list>\n      <ion-infinite-scroll (ionInfinite)="doInfinite($event)">\n      <ion-infinite-scroll-content></ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n\n   \n\n   </ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\resumo\resumo.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _c || Object])
-    ], MinhacarteiraPage);
-    return MinhacarteiraPage;
-    var _a, _b, _c;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], ResumoPage);
+    return ResumoPage;
 }());
 
-//# sourceMappingURL=minhacarteira.js.map
+//# sourceMappingURL=resumo.js.map
 
 /***/ })
 

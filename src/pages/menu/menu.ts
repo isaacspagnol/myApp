@@ -37,9 +37,9 @@ export class MenuPage {
     this.navCtrl.push('CadastroBancoPage');
   }
 
-  // signup() {
-  //   this.navCtrl.push('MenuPage');
-  // }
+  perfil() {
+    this.navCtrl.push('PerfilPage');
+  }
 
   ionViewDidLoad() {
     console.log('Hello MenuPage Page');
