@@ -1,15 +1,112 @@
 <ion-header class="header">
-  <ion-navbar>
-     <ion-title class="aling-center">
-        <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
-     </ion-title>
-     <ion-buttons end>
-        <button  (click)="Menu()">
-        <img src="./assets/img/home.png" alt="" style="max-height: 15px;" srcset="">
-        </button>
-     </ion-buttons>
-  </ion-navbar>
-</ion-header>
-<ion-content>
+      <ion-navbar>
+         <ion-title class="align-center">
+            <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
+         </ion-title>
+         <ion-buttons end>
+            <button  (click)="Menu()">
+            <img src="./assets/img/home.png" alt="" style="max-height: 15px;" srcset="">
+            </button>
+         </ion-buttons>
+      </ion-navbar>
+    </ion-header>
+
+<ion-content scroll="true" padding>
+   <div class="ion-padding">
+      <h2 class="align-center">SEU PERFIL</h2>
+      <img src="./assets/img/user.png" class="element-center" alt="">
+      <h2 class="align-center">SEUS DADOS</h2>
+   </div>
+
+   <div padding>
+      <h3 class="align-center">TIPO DE CONTA</h3>
+      <div>
+            <ion-segment  [(ngModel)]="estado" (ionChange)="segmentChanged($event)">
+               <ion-segment-button value="disponivel" id="disponivel">
+                  <ion-label>MEI</ion-label>
+               </ion-segment-button>
+      
+               <ion-segment-button value="em espera" id="emEspera">
+                  <ion-label>RPA</ion-label>
+               </ion-segment-button>
+            </ion-segment>
+      </div>      
+   </div>
+   <div padding>
+         <form action="">
+             <!-- INPUT NOME COMPLETO -->
+             <ion-label class="label-left">NOME</ion-label>
+             <ion-input type="text" required></ion-input>
+     
+             <!-- INPUT CPF-->
+             <ion-label class="label-left">SOBRENOME</ion-label>
+             <ion-input type="text" required></ion-input>
+             
+             <!-- INPUT BANCO -->
+             <ion-label class="label-left">CPF</ion-label>
+             <ion-input type="text" required></ion-input>
+     
+             <!-- INPUT BANCO -->
+             <ion-label class="label-left">CNPJ</ion-label>
+             <ion-input type="text" required></ion-input>
+     
+              <!-- INPUT BANCO -->
+             <ion-label class="label-left">ENDEREÇO</ion-label>
+             <ion-input type="text" required></ion-input>
+
+             <button (click)="login()" ion-button class="btn-green">{{ 'EDITAR'}}</button>
+
+
+         </form>
+   </div>
+   <div padding>
+         <h3 class="align-center">CONTA BANCARIA</h3>
+
+         <form action="">
+                <!-- INPUT NOME COMPLETO -->
+        <ion-label  class="label-left">NOME COMPLETO</ion-label>
+        <ion-input type="text" required></ion-input>
+
+        <!-- INPUT CPF-->
+        <ion-label  class="label-left">CPF</ion-label>
+        <ion-input type="number" required></ion-input>
+        
+        <!-- INPUT BANCO -->
+        <ion-label  class="label-left">BANCO</ion-label>
+
+        <ion-item>
+        <ion-select multiple="false">
+              <ion-option>246 – Banco ABC Brasil S.A.</ion-option>
+              <ion-option>748 – Banco Cooperativo Sicredi S.A.</ion-option>
+              <ion-option>453 – Banco Rural S.A.</ion-option>
+              <ion-option>748 – Banco Cooperativo Sicredi S.A.</ion-option>
+              <ion-option>748 – Banco Cooperativo Sicredi S.A.</ion-option>   
+              <ion-option>752 – Banco BNP Paribas Brasil S.A.</ion-option>
+              <ion-option>248 – Banco Boavista Interatlântico S.A.</ion-option>
+              <ion-option>036 – Banco Bradesco BBI S.A.</ion-option>
+              <ion-option>204 – Banco Bradesco Cartões S.A.</ion-option>
+              <ion-option>225 – Banco Brascan S.A.</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <!-- INPUT BANCO -->
+        <ion-label  class="label-left">AGÊNCIA</ion-label>
+        <ion-input type="text" required></ion-input>
+
+         <!-- INPUT BANCO -->
+        <ion-label  class="label-left">N° DA CONTA</ion-label>
+        <ion-input type="number" required></ion-input>
+         
+        <!-- INPUT BANCO -->
+        <ion-label  class="label-left">TIPO DE CONTA</ion-label>
+        <ion-input type="text" required></ion-input>
   
+               <button (click)="login()" ion-button class="btn-green">{{ 'EDITAR'}}</button>
+  
+  
+           </form>
+         
+       </div>
+       
 </ion-content>
+    

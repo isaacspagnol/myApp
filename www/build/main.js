@@ -30,11 +30,11 @@ var map = {
 		5
 	],
 	"../pages/minhacarteira/minhacarteira.module": [
-		330,
+		332,
 		4
 	],
 	"../pages/perfil/perfil.module": [
-		333,
+		330,
 		3
 	],
 	"../pages/resumo/resumo.module": [
@@ -42,11 +42,11 @@ var map = {
 		2
 	],
 	"../pages/singup/singup.module": [
-		332,
+		334,
 		0
 	],
 	"../pages/welcome/welcome.module": [
-		334,
+		333,
 		1
 	]
 };
@@ -346,11 +346,11 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/cadastro-banco/cadastro-banco.module#CadastroBancoPageModule', name: 'CadastroBancoPage', segment: 'cadastro-banco', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/minhacarteira/minhacarteira.module#MinhacarteiraPageModule', name: 'MinhacarteiraPage', segment: 'minhacarteira', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/resumo/resumo.module#ResumoPageModule', name: 'ResumoPage', segment: 'resumo', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/singup/singup.module#SingupPageModule', name: 'SingupPage', segment: 'singup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/perfil/perfil.module#PerfilPageModule', name: 'PerfilPage', segment: 'perfil', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/resumo/resumo.module#ResumoPageModule', name: 'ResumoPage', segment: 'resumo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/minhacarteira/minhacarteira.module#MinhacarteiraPageModule', name: 'MinhacarteiraPage', segment: 'minhacarteira', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/singup/singup.module#SingupPageModule', name: 'SingupPage', segment: 'singup', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()

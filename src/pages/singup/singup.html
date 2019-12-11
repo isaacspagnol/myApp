@@ -1,58 +1,64 @@
 
     <ion-header>
       <ion-navbar>
-        <ion-title class="aling-center">
+        <ion-title class="align-center logo">
           <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
         </ion-title>
       </ion-navbar>
     </ion-header>
   <ion-content scroll="false" fullscreen>
     <div class="ion-padding">
-      <h2 class="aling-center" >CADASTRO</h2>
+      <h2 class="align-center" >CADASTRO</h2>
       
     </div>
 
     <div padding>
       
        <form action="">
-         <ion-slides>
-          <ion-slide>
+         <!-- <ion-slides>
+          <ion-slide> -->
 
            <!-- INPUT NOME COMPLETO -->
           <ion-label>Seu Nome Completo</ion-label>
           <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
 
           <!-- INPUT EMAIL-->
-          <ion-label>Seu E-mail</ion-label>
-          <ion-input type="text" placeholder="Digite seu e-mail"></ion-input>
+          <ion-label>Seu E-mail Ou Telefone</ion-label>
+          <ion-input type="email" placeholder="Digite seu e-mail ou telefone"></ion-input>
           
-          <!-- INPUT CPF -->
-          <ion-label>CPF</ion-label>
-          <ion-input type="text" placeholder="Digite seu CPF"></ion-input>
+          <!-- INPUT SENHA -->
+          <ion-label>Senha</ion-label>
+          <ion-input type="password" placeholder="Escolha sua senha"></ion-input>
+
+          <!-- INPUT CONFIRMA A  SENHA -->
+          <ion-label>Confirmar Senha</ion-label>
+          <ion-input type="password" placeholder="Confirme sua senha"></ion-input>
+
 
           <!-- TIPO DE PARCEIRO -->
           <ion-label>Tipo de Parceiro Loumar</ion-label>
-          <ion-item>
+
+            <ion-item>
             <ion-select multiple="false">
-              <ion-option>Motorista de Aplicativo</ion-option>
-              <ion-option>Taxista</ion-option>
-              <ion-option>Anfitriao</ion-option>
-              <ion-option>Airbnb</ion-option>
-              <ion-option>Recepcionista/Mensageiro</ion-option>
-            </ion-select>
-          </ion-item>
-          
+                  <ion-option>Motorista de Aplicativo</ion-option>
+                  <ion-option>Taxista</ion-option>
+                  <ion-option>Anfitriao</ion-option>
+                  <ion-option>Airbnb</ion-option>
+                  <ion-option>Recepcionista/Mensageiro</ion-option>
+              </ion-select>
+            </ion-item>
+      <!--           
         <div padding id="continuarCadastro">
             <button (click)="goToSlide()" ion-button class=" btn-login">{{ 'CONTINUAR CADASTRO'}}</button>
         </div>
         <div padding>
           <p>Etapa 1/2</p>
-        </div>
+        </div> -->
 
-          </ion-slide>
-        <ion-slide> 
+          <!-- </ion-slide> -->
+        <!-- <ion-slide>  -->
            <!-- INPUT TELEFONE WPP -->
-           <ion-label>Telefone/WhatsApp</ion-label>
+           <!-- <ion-label>Telefone/WhatsApp</ion-label>
            <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
           
           <div class="pleft-0 ptop-16">
@@ -84,24 +90,24 @@
                 <ion-label class="margin-0 pleft-5">Li e aceito os Termos & Condicoes</ion-label>
               </ion-item>
            </ion-list>   
-          </div>
+          </div> -->
             
             <div padding id="continuarCadastro">
                 <button (click)="login()" ion-button class="  btn-login">{{ 'FINALIZAR CADASTRO'}}</button>
             </div>
-            <div >
+            
+            <!-- <div>  
+              <p>Etapa 2/2</p>
+            </div> -->
               
-                <p>Etapa 2/2</p>
-              </div>
-              
-          </ion-slide>
-        </ion-slides>
+          <!-- </ion-slide>
+        </ion-slides> -->
 
        </form>
     </div>
 
 
     <div padding>
-        <p class="aling-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>
+        <p class="align-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>
       </div>
   </ion-content>

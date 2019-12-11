@@ -206,473 +206,471 @@ page-minhacarteira {
         background-image: url(./assets/img/check.png);
 
     }
+    @media (max-width:320px) {
+        page-minhacarteira ion-card-header {
+            display: inline-flex;
+            padding: 16px 0 0px 14px !important;
+        }
+        page-minhacarteira ion-card-title.card-title.card-title-md{
+            font-size: 0.9em;
+        }
+        page-minhacarteira ion-card-title.card-title.card-title-ios{
+            font-size: 0.9em;
+        }
+        page-minhacarteira #btn-resgate {
+            left: 58px;
+        }
+        .item-md {
+            padding-left: 2px;
+        }
+        page-minhacarteira .comissao {
+            font-size: 1.1em;
+        }
+        page-minhacarteira .cVenda {
+            font-size: 1.3em;
+        }
+        .alert-md .alert-title {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: 900;
+        }
+        .alert-md .alert-sub-title {
+            font-size: 1em;
+            text-align: center;
+            font-weight: 600;
+            color: #4B4B4B;
+        }
+        .alert-ios .alert-title {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: 900;
+        }
+        .alert-ios .alert-sub-title {
+            font-size: 1em;
+            text-align: center;
+            font-weight: 600;
+            color: #4B4B4B;
+        }
+        .alert-md .alert-wrapper {
+            border-radius: 46px;
+            max-width: 280px;
+            background-color: #fafafa;
+            -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            margin-top:60px;
+            border: 1px solid #707070;
+        }
+        .alert-md .alert-button-group {
+            -webkit-flex-wrap: wrap-reverse;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 8px 8px 8px 24px;
+        }
+        .alert-md .alert-button {
+            text-align: right;
+            text-align: center;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #13E07A;
+            margin: 0 8px 6px 0;
+            padding: 12px;
+            width: 80%;
+            border-radius: 30px;
+            border: 1px solid #707070;
+        }
+        .alert-md .alert-button .button-inner {
+            -webkit-box-pack: center;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: center;
+        }
+        .alert-md .alert-input {
+            margin: 5px 0px;
+            border: 1px solid #707070;
+            color: #000;
+            border-radius: 18px;
+            padding: 10px;
+            background: #E2E2E2;
+        }
+         .alert-md .alert-wrapper {
+            border-radius: 46px;
+            max-width: 280px;
+            background-color: #fafafa;
+            -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            margin-top:60px;
+            border: 1px solid #707070;
+        }
+        .alert-md .alert-button-group {
+            -webkit-flex-wrap: wrap-reverse;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 8px 8px 8px 24px;
+        }
+        .alert-md .alert-button {
+            text-align: right;
+            text-align: center;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #13E07A;
+            margin: 0 8px 6px 0;
+            padding: 12px;
+            width: 80%;
+            border-radius: 30px;
+            border: 1px solid #707070;
+        }
+        .alert-md .alert-button .button-inner {
+            -webkit-box-pack: center;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: center;
+        }
+        .alert-md .alert-input {
+            margin: 5px 0px;
+            border: 1px solid #707070;
+            color: #000;
+            border-radius: 18px;
+            padding: 10px;
+            background: #E2E2E2;
+        }
+    
+    
+        .alert-ios .alert-wrapper {
+            border-radius: 46px;
+            max-width: 280px;
+            background-color: #fafafa;
+            -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            margin-top:60px;
+            border: 1px solid #707070;
+        }
+        .alert-ios .alert-button-group {
+            -webkit-flex-wrap: wrap-reverse;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 8px 8px 8px 24px;
+        }
+        .alert-ios .alert-button {
+            text-align: right;
+            text-align: center;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #13E07A;
+            margin: 0 8px 6px 0;
+            padding: 12px;
+            width: 80%;
+            border-radius: 30px;
+            border: 1px solid #707070;
+        }
+        .alert-ios .alert-button .button-inner {
+            -webkit-box-pack: center;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: center;
+        }
+        .alert-ios .alert-input {
+            margin: 5px 0px;
+            border: 1px solid #707070;
+            color: #000;
+            border-radius: 18px;
+            padding: 10px;
+            background: #E2E2E2;
+        }
+    }
+    @media (max-width:375px) {
+        .alert-md .alert-title {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: 900;
+        }
+        .alert-md .alert-sub-title {
+            font-size: 1em;
+            text-align: center;
+            font-weight: 600;
+            color: #4B4B4B;
+        }
+        .alert-md .alert-wrapper {
+            border-radius: 46px;
+            max-width: 280px;
+            background-color: #fafafa;
+            -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            margin-top:60px;
+            border: 1px solid #707070;
+        }
+        .alert-md .alert-button-group {
+            -webkit-flex-wrap: wrap-reverse;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 8px 8px 8px 24px;
+        }
+        .alert-md .alert-button {
+            text-align: right;
+            text-align: center;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #13E07A;
+            margin: 0 8px 6px 0;
+            padding: 12px;
+            width: 80%;
+            border-radius: 30px;
+            border: 1px solid #707070;
+        }
+        .alert-md .alert-button .button-inner {
+            -webkit-box-pack: center;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: center;
+        }
+        .alert-md .alert-input {
+            margin: 5px 0px;
+            border: 1px solid #707070;
+            color: #000;
+            border-radius: 18px;
+            padding: 10px;
+            background: #E2E2E2;
+        }
+    
+    
+        .alert-ios .alert-title {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: 900;
+        }
+        .alert-ios .alert-sub-title {
+            font-size: 1em;
+            text-align: center;
+            font-weight: 600;
+            color: #4B4B4B;
+        }
+        .alert-ios .alert-wrapper {
+            border-radius: 46px;
+            max-width: 280px;
+            background-color: #fafafa;
+            -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            margin-top:60px;
+            border: 1px solid #707070;
+        }
+        .alert-ios .alert-button-group {
+            -webkit-flex-wrap: wrap-reverse;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 8px 8px 8px 24px;
+        }
+        .alert-ios .alert-button {
+            text-align: right;
+            text-align: center;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #13E07A;
+            margin: 0 8px 6px 0;
+            padding: 12px;
+            width: 80%;
+            border-radius: 30px;
+            border: 1px solid #707070;
+        }
+        .alert-ios .alert-button .button-inner {
+            -webkit-box-pack: center;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: center;
+        }
+        .alert-ios .alert-input {
+            margin: 5px 0px;
+            border: 1px solid #707070;
+            color: #000;
+            border-radius: 18px;
+            padding: 10px;
+            background: #E2E2E2;
+        }
+    }
+    @media (max-width:411px) {
+        page-minhacarteira ion-card-header {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            // padding: 16px 0 0px 54px !important;
+        }
+        page-minhacarteira #moeda {
+            top: 18%;
+          
+        }
+        page-minhacarteira #valor {
+            top: 16%;
+        }
+        page-minhacarteira #btn-resgate {
+            left: 22%;
+            top: 30%;
+        }
+        .alert-md .alert-title {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: 900;
+        }
+        .alert-md .alert-sub-title {
+            font-size: 1em;
+            text-align: center;
+            font-weight: 600;
+            color: #4B4B4B;
+        }
+        .alert-md .alert-wrapper {
+            border-radius: 46px;
+            max-width: 280px;
+            background-color: #fafafa;
+            -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            margin-top:60px;
+            border: 1px solid #707070;
+        }
+        .alert-md .alert-button-group {
+            -webkit-flex-wrap: wrap-reverse;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 8px 8px 8px 24px;
+        }
+        .alert-md .alert-button {
+            text-align: right;
+            text-align: center;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #13E07A;
+            margin: 0 8px 6px 0;
+            padding: 12px;
+            width: 80%;
+            border-radius: 30px;
+            border: 1px solid #707070;
+        }
+        .alert-md .alert-button .button-inner {
+            -webkit-box-pack: center;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: center;
+        }
+        .alert-md .alert-input {
+            margin: 5px 0px;
+            border: 1px solid #707070;
+            color: #000;
+            border-radius: 18px;
+            padding: 10px;
+            background: #E2E2E2;
+        }    
+        .alert-ios .alert-title {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: 900;
+        }
+        .alert-ios .alert-sub-title {
+            font-size: 1em;
+            text-align: center;
+            font-weight: 600;
+            color: #4B4B4B;
+        }
+        .alert-ios .alert-wrapper {
+            border-radius: 46px;
+            max-width: 280px;
+            background-color: #fafafa;
+            -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+            margin-top:60px;
+            border: 1px solid #707070;
+        }
+        .alert-ios .alert-button-group {
+            -webkit-flex-wrap: wrap-reverse;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 8px 8px 8px 24px;
+        }
+        .alert-ios .alert-button {
+            text-align: right;
+            text-align: center;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #13E07A;
+            margin: 0 8px 6px 0;
+            padding: 12px;
+            width: 80%;
+            border-radius: 30px;
+            border: 1px solid #707070;
+        }
+        .alert-ios .alert-button .button-inner {
+            -webkit-box-pack: center;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: center;
+        }
+        .alert-ios .alert-input {
+            margin: 5px 0px;
+            border: 1px solid #707070;
+            color: #000;
+            border-radius: 18px;
+            padding: 10px;
+            background: #E2E2E2;
+        }
+        page-minhacarteira ion-card-title.card-title.card-title-md{
+            font-size: 0.9em;
+        }
+        page-minhacarteira ion-card-title.card-title.card-title-ios{
+            font-size: 0.9em;
+        }
+    }
   
 } 
 
-@media (max-width:320px) {
-    page-minhacarteira ion-card-header {
-        display: inline-flex;
-        padding: 16px 0 0px 14px !important;
-    }
-    page-minhacarteira ion-card-title.card-title.card-title-md{
-        font-size: 0.9em;
-    }
-    page-minhacarteira ion-card-title.card-title.card-title-ios{
-        font-size: 0.9em;
-    }
-    page-minhacarteira #btn-resgate {
-        left: 58px;
-    }
-    .item-md {
-        padding-left: 2px;
-    }
-    page-minhacarteira .comissao {
-        font-size: 1.1em;
-    }
-    page-minhacarteira .cVenda {
-        font-size: 1.3em;
-    }
-    .alert-md .alert-title {
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: 900;
-    }
-    .alert-md .alert-sub-title {
-        font-size: 1em;
-        text-align: center;
-        font-weight: 600;
-        color: #4B4B4B;
-    }
-    .alert-ios .alert-title {
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: 900;
-    }
-    .alert-ios .alert-sub-title {
-        font-size: 1em;
-        text-align: center;
-        font-weight: 600;
-        color: #4B4B4B;
-    }
-    .alert-md .alert-wrapper {
-        border-radius: 46px;
-        max-width: 280px;
-        background-color: #fafafa;
-        -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        margin-top:60px;
-        border: 1px solid #707070;
-    }
-    .alert-md .alert-button-group {
-        -webkit-flex-wrap: wrap-reverse;
-        -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 8px 8px 8px 24px;
-    }
-    .alert-md .alert-button {
-        text-align: right;
-        text-align: center;
-        border-radius: 2px;
-        position: relative;
-        overflow: hidden;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #ffffff;
-        background-color: #13E07A;
-        margin: 0 8px 6px 0;
-        padding: 12px;
-        width: 80%;
-        border-radius: 30px;
-        border: 1px solid #707070;
-    }
-    .alert-md .alert-button .button-inner {
-        -webkit-box-pack: center;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: center;
-    }
-    .alert-md .alert-input {
-        margin: 5px 0px;
-        border: 1px solid #707070;
-        color: #000;
-        border-radius: 18px;
-        padding: 10px;
-        background: #E2E2E2;
-    }
-     .alert-md .alert-wrapper {
-        border-radius: 46px;
-        max-width: 280px;
-        background-color: #fafafa;
-        -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        margin-top:60px;
-        border: 1px solid #707070;
-    }
-    .alert-md .alert-button-group {
-        -webkit-flex-wrap: wrap-reverse;
-        -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 8px 8px 8px 24px;
-    }
-    .alert-md .alert-button {
-        text-align: right;
-        text-align: center;
-        border-radius: 2px;
-        position: relative;
-        overflow: hidden;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #ffffff;
-        background-color: #13E07A;
-        margin: 0 8px 6px 0;
-        padding: 12px;
-        width: 80%;
-        border-radius: 30px;
-        border: 1px solid #707070;
-    }
-    .alert-md .alert-button .button-inner {
-        -webkit-box-pack: center;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: center;
-    }
-    .alert-md .alert-input {
-        margin: 5px 0px;
-        border: 1px solid #707070;
-        color: #000;
-        border-radius: 18px;
-        padding: 10px;
-        background: #E2E2E2;
-    }
-
-
-    .alert-ios .alert-wrapper {
-        border-radius: 46px;
-        max-width: 280px;
-        background-color: #fafafa;
-        -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        margin-top:60px;
-        border: 1px solid #707070;
-    }
-    .alert-ios .alert-button-group {
-        -webkit-flex-wrap: wrap-reverse;
-        -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 8px 8px 8px 24px;
-    }
-    .alert-ios .alert-button {
-        text-align: right;
-        text-align: center;
-        border-radius: 2px;
-        position: relative;
-        overflow: hidden;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #ffffff;
-        background-color: #13E07A;
-        margin: 0 8px 6px 0;
-        padding: 12px;
-        width: 80%;
-        border-radius: 30px;
-        border: 1px solid #707070;
-    }
-    .alert-ios .alert-button .button-inner {
-        -webkit-box-pack: center;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: center;
-    }
-    .alert-ios .alert-input {
-        margin: 5px 0px;
-        border: 1px solid #707070;
-        color: #000;
-        border-radius: 18px;
-        padding: 10px;
-        background: #E2E2E2;
-    }
-}
-@media (max-width:375px) {
-    .alert-md .alert-title {
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: 900;
-    }
-    .alert-md .alert-sub-title {
-        font-size: 1em;
-        text-align: center;
-        font-weight: 600;
-        color: #4B4B4B;
-    }
-    .alert-md .alert-wrapper {
-        border-radius: 46px;
-        max-width: 280px;
-        background-color: #fafafa;
-        -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        margin-top:60px;
-        border: 1px solid #707070;
-    }
-    .alert-md .alert-button-group {
-        -webkit-flex-wrap: wrap-reverse;
-        -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 8px 8px 8px 24px;
-    }
-    .alert-md .alert-button {
-        text-align: right;
-        text-align: center;
-        border-radius: 2px;
-        position: relative;
-        overflow: hidden;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #ffffff;
-        background-color: #13E07A;
-        margin: 0 8px 6px 0;
-        padding: 12px;
-        width: 80%;
-        border-radius: 30px;
-        border: 1px solid #707070;
-    }
-    .alert-md .alert-button .button-inner {
-        -webkit-box-pack: center;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: center;
-    }
-    .alert-md .alert-input {
-        margin: 5px 0px;
-        border: 1px solid #707070;
-        color: #000;
-        border-radius: 18px;
-        padding: 10px;
-        background: #E2E2E2;
-    }
-
-
-    .alert-ios .alert-title {
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: 900;
-    }
-    .alert-ios .alert-sub-title {
-        font-size: 1em;
-        text-align: center;
-        font-weight: 600;
-        color: #4B4B4B;
-    }
-    .alert-ios .alert-wrapper {
-        border-radius: 46px;
-        max-width: 280px;
-        background-color: #fafafa;
-        -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        margin-top:60px;
-        border: 1px solid #707070;
-    }
-    .alert-ios .alert-button-group {
-        -webkit-flex-wrap: wrap-reverse;
-        -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 8px 8px 8px 24px;
-    }
-    .alert-ios .alert-button {
-        text-align: right;
-        text-align: center;
-        border-radius: 2px;
-        position: relative;
-        overflow: hidden;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #ffffff;
-        background-color: #13E07A;
-        margin: 0 8px 6px 0;
-        padding: 12px;
-        width: 80%;
-        border-radius: 30px;
-        border: 1px solid #707070;
-    }
-    .alert-ios .alert-button .button-inner {
-        -webkit-box-pack: center;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: center;
-    }
-    .alert-ios .alert-input {
-        margin: 5px 0px;
-        border: 1px solid #707070;
-        color: #000;
-        border-radius: 18px;
-        padding: 10px;
-        background: #E2E2E2;
-    }
-}
-@media (max-width:411px) {
-    page-minhacarteira ion-card-header {
-        display: -webkit-inline-box;
-        display: -webkit-inline-flex;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        // padding: 16px 0 0px 54px !important;
-    }
-    page-minhacarteira #moeda {
-        top: 18%;
-      
-    }
-    page-minhacarteira #valor {
-        top: 16%;
-    }
-    page-minhacarteira #btn-resgate {
-        left: 20%;
-        top: 30%;
-    }
-    .alert-md .alert-title {
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: 900;
-    }
-    .alert-md .alert-sub-title {
-        font-size: 1em;
-        text-align: center;
-        font-weight: 600;
-        color: #4B4B4B;
-    }
-    .alert-md .alert-wrapper {
-        border-radius: 46px;
-        max-width: 280px;
-        background-color: #fafafa;
-        -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        margin-top:60px;
-        border: 1px solid #707070;
-    }
-    .alert-md .alert-button-group {
-        -webkit-flex-wrap: wrap-reverse;
-        -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 8px 8px 8px 24px;
-    }
-    .alert-md .alert-button {
-        text-align: right;
-        text-align: center;
-        border-radius: 2px;
-        position: relative;
-        overflow: hidden;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #ffffff;
-        background-color: #13E07A;
-        margin: 0 8px 6px 0;
-        padding: 12px;
-        width: 80%;
-        border-radius: 30px;
-        border: 1px solid #707070;
-    }
-    .alert-md .alert-button .button-inner {
-        -webkit-box-pack: center;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: center;
-    }
-    .alert-md .alert-input {
-        margin: 5px 0px;
-        border: 1px solid #707070;
-        color: #000;
-        border-radius: 18px;
-        padding: 10px;
-        background: #E2E2E2;
-    }
-
-
-    .alert-ios .alert-title {
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: 900;
-    }
-    .alert-ios .alert-sub-title {
-        font-size: 1em;
-        text-align: center;
-        font-weight: 600;
-        color: #4B4B4B;
-    }
-    .alert-ios .alert-wrapper {
-        border-radius: 46px;
-        max-width: 280px;
-        background-color: #fafafa;
-        -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
-        margin-top:60px;
-        border: 1px solid #707070;
-    }
-    .alert-ios .alert-button-group {
-        -webkit-flex-wrap: wrap-reverse;
-        -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 8px 8px 8px 24px;
-    }
-    .alert-ios .alert-button {
-        text-align: right;
-        text-align: center;
-        border-radius: 2px;
-        position: relative;
-        overflow: hidden;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #ffffff;
-        background-color: #13E07A;
-        margin: 0 8px 6px 0;
-        padding: 12px;
-        width: 80%;
-        border-radius: 30px;
-        border: 1px solid #707070;
-    }
-    .alert-ios .alert-button .button-inner {
-        -webkit-box-pack: center;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: center;
-    }
-    .alert-ios .alert-input {
-        margin: 5px 0px;
-        border: 1px solid #707070;
-        color: #000;
-        border-radius: 18px;
-        padding: 10px;
-        background: #E2E2E2;
-    }
-    page-minhacarteira ion-card-title.card-title.card-title-md{
-        font-size: 0.9em;
-    }
-    page-minhacarteira ion-card-title.card-title.card-title-ios{
-        font-size: 0.9em;
-    }
-}

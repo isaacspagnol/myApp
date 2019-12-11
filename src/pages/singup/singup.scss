@@ -7,7 +7,7 @@ page-singup{
     color: #fff;
     background-color: #101C6E;
   }
-  .toolbar-background-ios {
+.toolbar-background-ios {
     border-color: #00B0C1;
     background: #00B0C1;
 }
@@ -20,7 +20,7 @@ page-singup{
     background-color: #3E4989;
     z-index: -1;
  }
- .btn-login{
+.btn-login{
     background-color: #43D935;
     border-radius: 12px;
     margin: 10px  0 -20px 0;
@@ -131,10 +131,18 @@ ion-app.ios{
 }
 .select-text{
     color: white!important;
+
+}
+ion-select{
+    max-width: max-content;
 }
 ion-input.input.input-ios{
     border-radius: 12px;
     background-color: #3E4989;
     z-index: -1;
 }
+.select-icon{
+    position: absolute;
+    float: right;
+    }
 }

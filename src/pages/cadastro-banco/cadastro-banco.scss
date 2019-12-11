@@ -29,4 +29,32 @@ page-cadastro-banco {
           color: #000;
           font-weight: 600;
       }
+      .text-input-md{
+          color: black;
+          font-weight: 600;
+      }
+      ion-input.input.input-ios{
+        border-radius: 12px;
+        background-color: #b6b6b6;
+        z-index: -1;
+    }
+    .input-cover {
+        border-radius: 12px;
+        background-color: #b6b6b6;
+        z-index: -1;
+     }
+     .item-md{
+         background-color: #b6b6b6;
+         border-radius:12px;
+     }
+     .alert-wrapper{
+         border-radius: 12px;
+     }
+     button.disable-hover.alert-button.alert-button-md.alert-button-default.alert-button-default-md {
+        background: #13E07A;
+        color: white;
+        border-radius: 12px;
+        border: 1px solid #707070;
+        padding: 12px;
+    }
 }

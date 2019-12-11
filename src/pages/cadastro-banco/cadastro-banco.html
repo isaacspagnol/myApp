@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title class="aling-center">
+    <ion-title class="align-center">
       <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
     </ion-title>
   </ion-navbar>
@@ -9,7 +9,7 @@
 
 <ion-content scroll="false" fullscreen>
   <div class="ion-padding">
-    <h2 class="aling-center" >CADASTRO DE CONTA BANCARIA</h2>
+    <h2 class="align-center" >CADASTRO DE CONTA BANCARIA</h2>
   </div>
 
   <div padding>
@@ -20,11 +20,25 @@
 
         <!-- INPUT CPF-->
         <ion-label>CPF</ion-label>
-        <ion-input type="text" required></ion-input>
+        <ion-input type="number" required></ion-input>
         
         <!-- INPUT BANCO -->
         <ion-label>BANCO</ion-label>
-        <ion-input type="text" required></ion-input>
+
+        <ion-item>
+        <ion-select multiple="false">
+              <ion-option>246 – Banco ABC Brasil S.A.</ion-option>
+              <ion-option>748 – Banco Cooperativo Sicredi S.A.</ion-option>
+              <ion-option>453 – Banco Rural S.A.</ion-option>
+              <ion-option>748 – Banco Cooperativo Sicredi S.A.</ion-option>
+              <ion-option>748 – Banco Cooperativo Sicredi S.A.</ion-option>   
+              <ion-option>752 – Banco BNP Paribas Brasil S.A.</ion-option>
+              <ion-option>248 – Banco Boavista Interatlântico S.A.</ion-option>
+              <ion-option>036 – Banco Bradesco BBI S.A.</ion-option>
+              <ion-option>204 – Banco Bradesco Cartões S.A.</ion-option>
+              <ion-option>225 – Banco Brascan S.A.</ion-option>
+          </ion-select>
+        </ion-item>
 
         <!-- INPUT BANCO -->
         <ion-label>AGÊNCIA</ion-label>
@@ -32,14 +46,14 @@
 
          <!-- INPUT BANCO -->
         <ion-label>N° DA CONTA</ion-label>
-        <ion-input type="text" required></ion-input>
+        <ion-input type="number" required></ion-input>
          
         <!-- INPUT BANCO -->
         <ion-label>TIPO DE CONTA</ion-label>
         <ion-input type="text" required></ion-input>
 
         <div class="pleft-0 ptop-16">
-          <button (click)="login()" ion-button class="  btn-login">{{ 'CADASTAR CONTA'}}</button>
+          <button (click)="login()" ion-button class=" btn-login">{{ 'CADASTAR CONTA'}}</button>
        </div>
 
 

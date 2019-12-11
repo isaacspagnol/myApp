@@ -1,3 +1,71 @@
 page-perfil {
 
+    
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+        background-color:rgb(0, 176, 193)!important;
+        border-radius:12px;
+        color: white!important;
+        margin:2px;
+        border-color:white;
+        margin:2px;
+    }
+    .segment-md .segment-button.activated, .segment-ios .segment-button.segment-activated{
+        background-color:rgb(0, 176, 193)!important;
+        border-radius:12px;
+        color: white!important;
+        margin:2px;
+        border-color:white;
+        margin:2px;
+    }
+    ion-segment-button.segment-button{
+        color: black!important;
+        border-radius: 12px;
+        background-color: white!important;
+        border: none!important;
+        margin:2px;
+        padding:0;
+        text-align: center;
+    }
+    ion-label.label.label-md{
+        padding:0;
+        margin: 0;
+    }
+    ion-label.label.label-md {
+        font-weight: 500;
+    }
+    .input-cover {
+        border-radius: 12px;
+        background-color: #B6B6B6;
+        z-index: -1;
+    }
+    ion-input{
+        input::placeholder {
+          color:#fafafa!important;
+        }
+      }
+      .input, .input-ios{
+        background-color: #B6B6B6;
+        border-radius: 12px;
+      }
+      ion-label.label.label-ios{
+          color: #000;
+          font-weight: 600;
+      }
+      .label-left{
+          text-align: left;
+          padding: 9px 0px 6px 5px!important;        
+        }
+        .btn-green {
+            background-color:#13E07A;
+            border-radius: 12px;
+            margin: 20px 0;
+            width: 100%;
+            border:1px solid #707070;
+            box-shadow: none;
+        }
+        .item-md {
+            background-color: #b6b6b6;
+            border-radius: 12px;
+        }
+   
 }

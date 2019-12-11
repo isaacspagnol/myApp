@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 332:
+/***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__singup__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__singup__ = __webpack_require__(341);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,14 +44,14 @@ var SingupPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 339:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingupPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88,16 +88,15 @@ var SingupPage = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */])
     ], SingupPage.prototype, "slides", void 0);
     SingupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-singup',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\singup\singup.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="aling-center">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n  <ion-content scroll="false" fullscreen>\n    <div class="ion-padding">\n      <h2 class="aling-center" >CADASTRO</h2>\n      \n    </div>\n\n    <div padding>\n      \n       <form action="">\n         <ion-slides>\n          <ion-slide>\n\n           <!-- INPUT NOME COMPLETO -->\n          <ion-label>Seu Nome Completo</ion-label>\n          <ion-input type="text" required placeholder="Digite seu nome"></ion-input>\n\n          <!-- INPUT EMAIL-->\n          <ion-label>Seu E-mail</ion-label>\n          <ion-input type="text" placeholder="Digite seu e-mail"></ion-input>\n          \n          <!-- INPUT CPF -->\n          <ion-label>CPF</ion-label>\n          <ion-input type="text" placeholder="Digite seu CPF"></ion-input>\n\n          <!-- TIPO DE PARCEIRO -->\n          <ion-label>Tipo de Parceiro Loumar</ion-label>\n          <ion-item>\n            <ion-select multiple="false">\n              <ion-option>Motorista de Aplicativo</ion-option>\n              <ion-option>Taxista</ion-option>\n              <ion-option>Anfitriao</ion-option>\n              <ion-option>Airbnb</ion-option>\n              <ion-option>Recepcionista/Mensageiro</ion-option>\n            </ion-select>\n          </ion-item>\n          \n        <div padding id="continuarCadastro">\n            <button (click)="goToSlide()" ion-button class=" btn-login">{{ \'CONTINUAR CADASTRO\'}}</button>\n        </div>\n        <div padding>\n          <p>Etapa 1/2</p>\n        </div>\n\n          </ion-slide>\n        <ion-slide> \n           <!-- INPUT TELEFONE WPP -->\n           <ion-label>Telefone/WhatsApp</ion-label>\n           <ion-input type="text" required placeholder="Digite seu nome"></ion-input>\n          \n          <div class="pleft-0 ptop-16">\n              <ion-list radio-group class="inline-flex">\n                <ion-item>                \n                    <ion-radio class="MEI"></ion-radio>\n                    <ion-label class="MEI margin-0 pleft-5">Sou MEI</ion-label>\n                </ion-item>\n              <ion-item>\n                    <ion-radio id="pis-radio" class="PisCheck"></ion-radio>\n                    <ion-label class="PisCheck margin-0 pleft-5">Nao sou MEI</ion-label>\n              </ion-item>\n             </ion-list>   \n          </div>\n\n          <div class="hide" id="CNPJ">\n            <ion-label>CNPJ</ion-label>\n            <ion-input type="text" placeholder="Digite seu CNPJ"></ion-input>\n          </div>\n          <div class="hide" id="PIS">\n            <ion-label>PIS</ion-label>\n            <ion-input type="text" placeholder="Digite seu PIS"></ion-input>\n          </div>      \n\n          <div class="pleft-0 ptop-16">\n            <ion-list  class="inline-flex">\n              <ion-item>                \n                  <ion-checkbox></ion-checkbox>\n                <ion-label class="margin-0 pleft-5">Li e aceito os Termos & Condicoes</ion-label>\n              </ion-item>\n           </ion-list>   \n          </div>\n            \n            <div padding id="continuarCadastro">\n                <button (click)="login()" ion-button class="  btn-login">{{ \'FINALIZAR CADASTRO\'}}</button>\n            </div>\n            <div >\n              \n                <p>Etapa 2/2</p>\n              </div>\n              \n          </ion-slide>\n        </ion-slides>\n\n       </form>\n    </div>\n\n\n    <div padding>\n        <p class="aling-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>\n      </div>\n  </ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\singup\singup.html"*/
+            selector: 'page-singup',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\singup\singup.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="align-center logo">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n  <ion-content scroll="false" fullscreen>\n    <div class="ion-padding">\n      <h2 class="align-center" >CADASTRO</h2>\n      \n    </div>\n\n    <div padding>\n      \n       <form action="">\n         <!-- <ion-slides>\n          <ion-slide> -->\n\n           <!-- INPUT NOME COMPLETO -->\n          <ion-label>Seu Nome Completo</ion-label>\n          <ion-input type="text" required placeholder="Digite seu nome"></ion-input>\n\n          <!-- INPUT EMAIL-->\n          <ion-label>Seu E-mail Ou Telefone</ion-label>\n          <ion-input type="email" placeholder="Digite seu e-mail ou telefone"></ion-input>\n          \n          <!-- INPUT SENHA -->\n          <ion-label>Senha</ion-label>\n          <ion-input type="password" placeholder="Escolha sua senha"></ion-input>\n\n          <!-- INPUT CONFIRMA A  SENHA -->\n          <ion-label>Confirmar Senha</ion-label>\n          <ion-input type="password" placeholder="Confirme sua senha"></ion-input>\n\n\n          <!-- TIPO DE PARCEIRO -->\n          <ion-label>Tipo de Parceiro Loumar</ion-label>\n\n            <ion-item>\n            <ion-select multiple="false">\n                  <ion-option>Motorista de Aplicativo</ion-option>\n                  <ion-option>Taxista</ion-option>\n                  <ion-option>Anfitriao</ion-option>\n                  <ion-option>Airbnb</ion-option>\n                  <ion-option>Recepcionista/Mensageiro</ion-option>\n              </ion-select>\n            </ion-item>\n      <!--           \n        <div padding id="continuarCadastro">\n            <button (click)="goToSlide()" ion-button class=" btn-login">{{ \'CONTINUAR CADASTRO\'}}</button>\n        </div>\n        <div padding>\n          <p>Etapa 1/2</p>\n        </div> -->\n\n          <!-- </ion-slide> -->\n        <!-- <ion-slide>  -->\n           <!-- INPUT TELEFONE WPP -->\n           <!-- <ion-label>Telefone/WhatsApp</ion-label>\n           <ion-input type="text" required placeholder="Digite seu nome"></ion-input>\n          \n          <div class="pleft-0 ptop-16">\n              <ion-list radio-group class="inline-flex">\n                <ion-item>                \n                    <ion-radio class="MEI"></ion-radio>\n                    <ion-label class="MEI margin-0 pleft-5">Sou MEI</ion-label>\n                </ion-item>\n              <ion-item>\n                    <ion-radio id="pis-radio" class="PisCheck"></ion-radio>\n                    <ion-label class="PisCheck margin-0 pleft-5">Nao sou MEI</ion-label>\n              </ion-item>\n             </ion-list>   \n          </div>\n\n          <div class="hide" id="CNPJ">\n            <ion-label>CNPJ</ion-label>\n            <ion-input type="text" placeholder="Digite seu CNPJ"></ion-input>\n          </div>\n          <div class="hide" id="PIS">\n            <ion-label>PIS</ion-label>\n            <ion-input type="text" placeholder="Digite seu PIS"></ion-input>\n          </div>      \n\n          <div class="pleft-0 ptop-16">\n            <ion-list  class="inline-flex">\n              <ion-item>                \n                  <ion-checkbox></ion-checkbox>\n                <ion-label class="margin-0 pleft-5">Li e aceito os Termos & Condicoes</ion-label>\n              </ion-item>\n           </ion-list>   \n          </div> -->\n            \n            <div padding id="continuarCadastro">\n                <button (click)="login()" ion-button class="  btn-login">{{ \'FINALIZAR CADASTRO\'}}</button>\n            </div>\n            \n            <!-- <div>  \n              <p>Etapa 2/2</p>\n            </div> -->\n              \n          <!-- </ion-slide>\n        </ion-slides> -->\n\n       </form>\n    </div>\n\n\n    <div padding>\n        <p class="align-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>\n      </div>\n  </ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\singup\singup.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], SingupPage);
     return SingupPage;
-    var _a, _b;
 }());
 
 __WEBPACK_IMPORTED_MODULE_2_jquery__(document).ready(function () {
@@ -121,7 +120,7 @@ __WEBPACK_IMPORTED_MODULE_2_jquery__(document).ready(function () {
 
 /***/ }),
 
-/***/ 340:
+/***/ 342:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

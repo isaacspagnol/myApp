@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 334:
+/***/ 333:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome__ = __webpack_require__(340);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var WelcomePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 342:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,7 +80,7 @@ var WelcomePage = /** @class */ (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\welcome\welcome.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="aling-center">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n  <ion-content scroll="false">\n    <div class="ion-padding">\n      <h2 class="aling-center" >LOUMAR PARTNERS</h2>\n    </div>\n\n    <div padding>\n       <form action="">\n\n         <!-- Input with placeholder -->\n         <ion-label>Codigo Loumar Ou E-mail</ion-label>\n          <ion-input type="text" required placeholder="Digite seu codigo Loumar Ou E-mail"></ion-input>\n           <!-- Input with placeholder -->\n         <ion-label>Senha</ion-label>\n         <ion-input type="password" placeholder="Digite sua senha"></ion-input>\n       </form>\n    </div>\n    <div padding>\n      <button ion-button block (click)="login()" class="btn-entrar">{{ \'ENTRAR\'}}</button>\n    </div>\n\n    <div padding>\n      <p class="aling-center">NOVO AQUI E QUER SE CADASTRAR PARA GANHAR VANTAGENS?</p>\n        <button ion-button block (click)="signup()" class="btn-login">{{ \'CADASTAR\'}}</button>\n    </div>\n\n    <div padding>\n        <p class="aling-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>\n      </div>\n  </ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\welcome\welcome.html"*/
+            selector: 'page-welcome',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\welcome\welcome.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="align-center logo">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n  <ion-content scroll="false">\n    <div class="ion-padding">\n      <h2 class="align-center" >LOUMAR PARTNERS</h2>\n    </div>\n\n    <div padding>\n       <form action="">\n\n         <!-- Input with placeholder -->\n         <ion-label>Codigo Loumar Ou E-mail</ion-label>\n          <ion-input type="text" required placeholder="Digite seu codigo Loumar Ou E-mail"></ion-input>\n           <!-- Input with placeholder -->\n         <ion-label>Senha</ion-label>\n         <ion-input type="password" placeholder="Digite sua senha"></ion-input>\n       </form>\n    </div>\n    <div padding>\n      <button ion-button block (click)="login()" class="btn-entrar">{{ \'ENTRAR\'}}</button>\n    </div>\n\n    <div padding>\n      <p class="align-center">NOVO AQUI E QUER SE CADASTRAR PARA GANHAR VANTAGENS?</p>\n        <button ion-button block (click)="signup()" class="btn-login">{{ \'CADASTAR\'}}</button>\n    </div>\n\n    <div padding>\n        <p class="align-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>\n      </div>\n  </ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\welcome\welcome.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], WelcomePage);

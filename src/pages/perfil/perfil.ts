@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonSegment } from '@ionic/angular';
+
 
 
 @IonicPage()
@@ -19,5 +21,9 @@ export class PerfilPage {
     this.navCtrl.push('MenuPage');
   }
 
-
+  segmentChanged(event){
+    const valorSegmento = event._value;
+    console.log(valorSegmento);
+   }
+  
 }
