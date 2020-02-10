@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, Nav, NavController } from 'ionic-angular';
-import { IonSegment } from '@ionic/angular';
+// import { IonSegment } from '@ionic/angular';
 import { AlertController } from 'ionic-angular';
 
 
@@ -41,15 +41,15 @@ constructor(
     {
       venda: {
         nVenda: '34873987',
-        cVenda: '32',
-        vTotal: '62'
+        cVenda: '32,00',
+        vTotal: '62,00'
       },
     },
 
     {
       venda: {
         nVenda: '34873987',
-        cVenda: '32',
+        cVenda: '32,00',
         vTotal: '62'
       }, 
     },
@@ -57,7 +57,7 @@ constructor(
     {
       venda: {
         nVenda: '34873987',
-        cVenda: '32',
+        cVenda: '32,93',
         vTotal: '62'
       }, 
     }
@@ -66,7 +66,7 @@ constructor(
     {
       venda: {
         nVenda: '34873987',
-        cVenda: '32',
+        cVenda: '32,83',
         vTotal: '62'
       },
     },
@@ -74,7 +74,7 @@ constructor(
     {
       venda: {
         nVenda: '34873987',
-        cVenda: '32',
+        cVenda: '32,30',
         vTotal: '62'
       }, 
     },
@@ -82,7 +82,7 @@ constructor(
     {
       venda: {
         nVenda: '34873987',
-        cVenda: '32',
+        cVenda: '32,92',
         vTotal: '62'
       }, 
     },
@@ -117,8 +117,8 @@ constructor(
     return new Promise((resolve) => {
       setTimeout(() => {
         for (var i = 0; i < 30; i++) {
-          this.vendasDisponiveis.push( this.vendasDisponiveis.length );
-          this.vendasEmEspera.push( this.vendasEmEspera.length );
+          this.vendasDisponiveis.push(this.vendasDisponiveis.length);
+          this.vendasEmEspera.push(this.vendasEmEspera.length);
         }
 
         console.log('Async operation has ended');

@@ -6,29 +6,39 @@
         </ion-title>
       </ion-navbar>
     </ion-header>
+
   <ion-content scroll="false">
     <div class="ion-padding">
-      <h2 class="align-center" >LOUMAR PARTNERS</h2>
+        <h2 class="align-center" >LOUMAR PARTNERS</h2>
     </div>
 
-    <div padding>
-       <form action="">
+    <div class="padding-0-16">
+      <ion-list class="list-singup">
+        <ion-label>Codigo loumar ou e-mail</ion-label>
 
-         <!-- Input with placeholder -->
-         <ion-label>Codigo Loumar Ou E-mail</ion-label>
-          <ion-input type="text" required placeholder="Digite seu codigo Loumar Ou E-mail"></ion-input>
-           <!-- Input with placeholder -->
-         <ion-label>Senha</ion-label>
-         <ion-input type="password" placeholder="Digite sua senha"></ion-input>
-       </form>
+        <ion-item>  
+
+            <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
+        </ion-item>
+        <ion-label>Codigo loumar ou e-mail</ion-label>
+
+        <ion-item>
+          <ion-input [type]="isTextFieldType ? 'text' : 'password'" placeholder="Escolha sua senha"></ion-input>
+          <ion-icon [name]="isTextFieldType ? 'eye-off' : 'eye'" color="gray" item-end  (click)="togglePasswordFieldType()"></ion-icon>
+        </ion-item>
+        
+    </ion-list>
     </div>
-    <div padding>
-      <button ion-button block (click)="login()" class="btn-entrar">{{ 'ENTRAR'}}</button>
+
+    <div class="padding-0-16">
+      <button ion-button block (click)="login()" class="btn-entrar padding-0-16">{{ 'ENTRAR'}}</button>
+
+      <p class="align-center">Esqueceu sua senha?</p>
     </div>
 
     <div padding>
       <p class="align-center">NOVO AQUI E QUER SE CADASTRAR PARA GANHAR VANTAGENS?</p>
-        <button ion-button block (click)="signup()" class="btn-login">{{ 'CADASTAR'}}</button>
+        <button ion-button block (click)="signup()" class="btn-singup">{{ 'CADASTAR'}}</button>
     </div>
 
     <div padding>

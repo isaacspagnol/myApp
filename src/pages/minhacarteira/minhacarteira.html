@@ -1,85 +1,91 @@
 <ion-header class="header">
-    <ion-navbar>
-       <ion-title class="align-center logo">
-          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
-       </ion-title>
-       <ion-buttons end>
-          <button  (click)="Menu()">
-          <img src="./assets/img/home.png" alt="" style="max-height: 15px;" srcset="">
-          </button>
-       </ion-buttons>
-    </ion-navbar>
- </ion-header>
- <ion-content scroll="true" padding>
+   <ion-navbar>
+
+      <ion-title class="align-center logo">
+         <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
+      </ion-title>
+
+      <ion-buttons end>
+         <button  (click)="Menu()">
+         <img src="./assets/img/home.png" alt="" style="max-height: 15px;" srcset="">
+         </button>
+      </ion-buttons>
+
+   </ion-navbar>
+</ion-header>
+
+
+<ion-content scroll="true" >
    <div class="ion-padding">
-     <h2 class="align-center" >MINHA CARTEIRA</h2>
+      <h2 class="align-center" >MINHA CARTEIRA</h2>
    </div>
 
+   <div padding>
+      <ion-card padding class="card-minhaCarteira">
+         <ion-card-header>
+            <!-- <img src="./assets/img/check-circle.png" class="check-icon" > -->
+            <ion-card-title>SALDO DISPONIVEL PARA SAQUE</ion-card-title>
+         </ion-card-header>
+         <ion-card-content>
+            <div id="moeda">
+               <strong>R$</strong>
+            </div>
+            <div id="valor">
+               <strong>450</strong>
+            </div>
+            <div id="btn-resgate">
+               <button (click)="validarNota()"  ion-button class=" btn-login">{{ 'RESGATAR'}}</button>
+            </div>
+         </ion-card-content>
+      </ion-card>
+   </div>
 
-
-   <ion-card class="card-minhaCarteira">
-      <ion-card-header>
-         <img src="./assets/img/check-circle.png" class="check-icon">
-         <ion-card-title> RESGATE REALIZADO COM SUCESSO!</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-         <div id="moeda">
-            <strong>R$</strong>
-         </div>
-         <div id="valor">
-            <strong>450</strong>
-         </div>
-         <div id="btn-resgate">
-            <button (click)="validarNota()"  ion-button class=" btn-login">{{ 'RESGATAR'}}</button>
-         </div>
-         
-      </ion-card-content>
-    </ion-card>
-
-   
-      <div padding>
-         <button (click)="notavalidada()"  ion-button class=" btn-login ">{{ 'NOTA VALIDADA'}}</button>
-      </div>
-   <div>
+   <div class="padding-0-16">
       <ion-segment  [(ngModel)]="estado" (ionChange)="segmentChanged($event)">
          <ion-segment-button value="disponivel" id="disponivel">
             <ion-label>DISPONIVEL</ion-label>
          </ion-segment-button>
-
          <ion-segment-button  value="em espera" id="emEspera">
             <ion-label>EM ESPERA</ion-label>
          </ion-segment-button>
-
       </ion-segment>
    </div>
-   <ion-list>
-      <ion-item>
-            <ion-card *ngFor="let item of vendasDisponiveis" class="card-vendas" >
-               <ion-grid>
-                  <ion-row>
-                     <ion-col col-2 class="col-wallet-icon">      
-                        <img class="wallet-icon" src="../assets/img/icon-wallet.png">
-                     </ion-col>
-                     <ion-col col-7>
+
+
+   <div>
+      <ion-list>
+         <ion-item>
+
+            <div class="content-cards">
+               <ion-card *ngFor="let item of vendasDisponiveis" class="card-vendas" >
+                  <ion-grid>
+                     <ion-row>
+                        <ion-col col-8>
                            <h2 class="text-left comissao ptop-10">VALOR DA COMISSAO</h2>
-                           <h2 class="text-left vlVenda font-800">VALOR DA VENDA </h2>
                            <p class="text-left nVenda font-800">VENDA N° <span>{{item.venda.nVenda}}</span></p>
-                     </ion-col>
-                     <ion-col col-3  class="fit-content ptop-10">
+                        </ion-col>
+                        <ion-col col-2 class="fit-content ptop-10">
                            <h2 class="text-right cVenda ptop-5 disponivel" >R$ <span>{{item.venda.cVenda}}</span></h2>
                            <h2 class="text-right vTotal">R$ {{item.venda.vTotal}}</h2>
-                     </ion-col>
-                  </ion-row>
-               </ion-grid>
-            </ion-card>
-      </ion-item>
-   </ion-list>
+                        </ion-col>
+                     </ion-row>
+                  </ion-grid>
+               </ion-card>                  
+            </div>
+
+         </ion-item>
+      </ion-list>
+      
+      <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+         <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+
+   </div>
+     
 
 
 
-   
-    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-      <ion-infinite-scroll-content></ion-infinite-scroll-content>
-    </ion-infinite-scroll>
-   
-</ion-content>
+
+
+
+   </ion-content>

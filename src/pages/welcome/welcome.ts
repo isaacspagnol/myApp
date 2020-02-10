@@ -13,6 +13,7 @@ import { IonicPage, NavController } from 'ionic-angular';
   templateUrl: 'welcome.html'
 })
 export class WelcomePage {
+  isTextFieldType: boolean;
 
   constructor(public navCtrl: NavController) { }
 
@@ -23,5 +24,7 @@ export class WelcomePage {
   signup() {
     this.navCtrl.push('SingupPage');
   }
-  
+  togglePasswordFieldType(){
+    this.isTextFieldType = !this.isTextFieldType;
+  } 
 }

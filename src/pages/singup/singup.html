@@ -19,25 +19,52 @@
           <ion-slide> -->
 
            <!-- INPUT NOME COMPLETO -->
-          <ion-label>Seu Nome Completo</ion-label>
-          <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
-
+           <!-- <div>
+            <ion-label>Seu nome completo</ion-label>
+            <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
+          </div> -->
           <!-- INPUT EMAIL-->
-          <ion-label>Seu E-mail Ou Telefone</ion-label>
-          <ion-input type="email" placeholder="Digite seu e-mail ou telefone"></ion-input>
-          
+          <!-- <div>
+            <ion-label>Seu e-mail ou telefone</ion-label>
+            <ion-input type="email" placeholder="Digite seu e-mail ou telefone"></ion-input>
+          </div> -->
           <!-- INPUT SENHA -->
-          <ion-label>Senha</ion-label>
-          <ion-input type="password" placeholder="Escolha sua senha"></ion-input>
-
+          <!-- <div>
+            <ion-label>Senha</ion-label>
+            <ion-input type="password" placeholder="Escolha sua senha"></ion-input>
+          </div> -->
           <!-- INPUT CONFIRMA A  SENHA -->
-          <ion-label>Confirmar Senha</ion-label>
-          <ion-input type="password" placeholder="Confirme sua senha"></ion-input>
+          <!-- <div>
+            <ion-label>Confirmar senha</ion-label>
+            <ion-input type="password" placeholder="Confirme sua senha"></ion-input>
+            <ion-icon name="eye" color="gray" item-end></ion-icon>
+        </div> -->
+
+
+          <ion-list class="list-singup">
+              <ion-item>  
+                  <ion-input type="text" required placeholder="Digite seu nome"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input type="email" placeholder="Digite seu e-mail ou telefone"></ion-input>
+
+              </ion-item>
+              <ion-item>
+                <ion-input [type]="isTextFieldType ? 'text' : 'password'" placeholder="Escolha sua senha"></ion-input>
+                <ion-icon [name]="isTextFieldType ? 'eye-off' : 'eye'" color="gray" item-end  (click)="togglePasswordFieldType()"></ion-icon>
+
+
+              </ion-item>
+              <ion-item>
+                <ion-input  [type]="isTextFieldType2 ? 'text' : 'password'" placeholder="Confirme sua senha"></ion-input>
+                <ion-icon  [name]="isTextFieldType2 ? 'eye-off' : 'eye'" color="gray" item-end  (click)="togglePasswordFieldType2()"></ion-icon>
+              </ion-item>
+          </ion-list>
+
 
 
           <!-- TIPO DE PARCEIRO -->
-          <ion-label>Tipo de Parceiro Loumar</ion-label>
-
+          <!-- <ion-label>Tipo de Parceiro Loumar</ion-label>
             <ion-item>
             <ion-select multiple="false">
                   <ion-option>Motorista de Aplicativo</ion-option>
@@ -46,8 +73,24 @@
                   <ion-option>Airbnb</ion-option>
                   <ion-option>Recepcionista/Mensageiro</ion-option>
               </ion-select>
-            </ion-item>
-      <!--           
+            </ion-item> -->
+
+
+         
+<!-- 
+            <ion-label>Tipo de parceiro Loumar</ion-label>
+            <ion-list>
+              <ion-item>
+                <ion-select>
+                  <ion-option>Motorista de Aplicativo</ion-option>
+                  <ion-option>Taxista</ion-option>
+                  <ion-option>Anfitriao</ion-option>
+                  <ion-option>Airbnb</ion-option>
+                  <ion-option>Recepcionista/Mensageiro</ion-option>
+                </ion-select>
+              </ion-item>
+            </ion-list> -->
+        <!--           
         <div padding id="continuarCadastro">
             <button (click)="goToSlide()" ion-button class=" btn-login">{{ 'CONTINUAR CADASTRO'}}</button>
         </div>

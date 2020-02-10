@@ -25697,8 +25697,27 @@ ion-navbar.toolbar {
   min-height: 46px;
 }
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  outline: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased !important;
+  margin: 0;
+}
+
+body, input, button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .logo {
@@ -25766,6 +25785,10 @@ p {
 
 .ptop-20 {
   padding-top: 20px;
+}
+
+.padding-0-16 {
+  padding: 0 16px;
 }
 
 .font-600 {
@@ -26017,17 +26040,18 @@ page-minhacarteira ion-card.card.card-md.card-minhaCarteira {
   box-shadow: 3px 5px 15px #a59e9e52;
   border-radius: 12px;
   width: 100%;
-  height: 214px;
+  height: 210px;
   margin: 0;
 }
 
 page-minhacarteira ion-card.card.card-md.card-vendas {
   background-color: #FFF;
-  -webkit-box-shadow: 3px 5px 15px #a59e9e52;
-  box-shadow: 3px 5px 15px #a59e9e52;
-  border-radius: 12px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 10px;
   width: 100%;
-  margin: 20px 0;
+  margin: 12px auto;
+  border: 1px solid #e4e7e7;
 }
 
 page-minhacarteira ion-card.card-liberacao.card.card-md {
@@ -26042,6 +26066,7 @@ page-minhacarteira ion-card-title.card-title.card-title-md {
   text-align: center;
   padding: 0;
   color: #4B4B4B;
+  margin: 0 auto;
 }
 
 page-minhacarteira ion-card.card.card-ios {
@@ -26050,7 +26075,7 @@ page-minhacarteira ion-card.card.card-ios {
   box-shadow: 3px 5px 15px #a59e9e52;
   border-radius: 12px;
   width: 100%;
-  height: 214px;
+  height: 200px;
   margin: 0;
 }
 
@@ -26074,18 +26099,18 @@ page-minhacarteira ion-card-header {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 16px 0 0px 16px !important;
+  width: 100%;
 }
 
 page-minhacarteira img.check-icon {
   width: 22px;
   height: 22px;
-  margin-right: 10px;
 }
 
 page-minhacarteira #moeda {
   position: absolute;
   left: 28%;
-  top: 22%;
+  top: 24%;
   overflow: hidden;
   width: 51px;
   height: 40px;
@@ -26101,7 +26126,7 @@ page-minhacarteira #moeda {
 page-minhacarteira #valor {
   position: absolute;
   left: 42%;
-  top: 20%;
+  top: 22%;
   overflow: hidden;
   width: 99px;
   height: 56px;
@@ -26114,11 +26139,9 @@ page-minhacarteira #valor {
 }
 
 page-minhacarteira #btn-resgate {
-  position: absolute;
-  width: 206px;
+  width: 80%;
   height: 42px;
-  left: 85px;
-  top: 32%;
+  margin: 30% auto;
 }
 
 page-minhacarteira #btn-validando {
@@ -26241,54 +26264,54 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
 }
 
 @media (max-width: 320px) {
-  page-minhacarteira page-minhacarteira ion-card-header {
+  page-minhacarteira ion-card-header {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 16px 0 0px 14px !important;
   }
-  page-minhacarteira page-minhacarteira ion-card-title.card-title.card-title-md {
+  page-minhacarteira ion-card-title.card-title.card-title-md {
     font-size: 0.9em;
   }
-  page-minhacarteira page-minhacarteira ion-card-title.card-title.card-title-ios {
+  page-minhacarteira ion-card-title.card-title.card-title-ios {
     font-size: 0.9em;
   }
-  page-minhacarteira page-minhacarteira #btn-resgate {
+  page-minhacarteira #btn-resgate {
     left: 58px;
   }
-  page-minhacarteira .item-md {
+  .item-md {
     padding-left: 2px;
   }
-  page-minhacarteira page-minhacarteira .comissao {
+  page-minhacarteira .comissao {
     font-size: 1.1em;
   }
-  page-minhacarteira page-minhacarteira .cVenda {
+  page-minhacarteira .cVenda {
     font-size: 1.3em;
   }
-  page-minhacarteira .alert-md .alert-title {
+  .alert-md .alert-title {
     font-size: 1.2em;
     text-align: center;
     font-weight: 900;
   }
-  page-minhacarteira .alert-md .alert-sub-title {
+  .alert-md .alert-sub-title {
     font-size: 1em;
     text-align: center;
     font-weight: 600;
     color: #4B4B4B;
   }
-  page-minhacarteira .alert-ios .alert-title {
+  .alert-ios .alert-title {
     font-size: 1.2em;
     text-align: center;
     font-weight: 900;
   }
-  page-minhacarteira .alert-ios .alert-sub-title {
+  .alert-ios .alert-sub-title {
     font-size: 1em;
     text-align: center;
     font-weight: 600;
     color: #4B4B4B;
   }
-  page-minhacarteira .alert-md .alert-wrapper {
+  .alert-md .alert-wrapper {
     border-radius: 46px;
     max-width: 280px;
     background-color: #fafafa;
@@ -26297,7 +26320,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     margin-top: 60px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-md .alert-button-group {
+  .alert-md .alert-button-group {
     -webkit-flex-wrap: wrap-reverse;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -26307,7 +26330,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     justify-content: center;
     padding: 8px 8px 8px 24px;
   }
-  page-minhacarteira .alert-md .alert-button {
+  .alert-md .alert-button {
     text-align: right;
     text-align: center;
     border-radius: 2px;
@@ -26323,13 +26346,13 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     border-radius: 30px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-md .alert-button .button-inner {
+  .alert-md .alert-button .button-inner {
     -webkit-box-pack: center;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: center;
   }
-  page-minhacarteira .alert-md .alert-input {
+  .alert-md .alert-input {
     margin: 5px 0px;
     border: 1px solid #707070;
     color: #000;
@@ -26337,7 +26360,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     padding: 10px;
     background: #E2E2E2;
   }
-  page-minhacarteira .alert-md .alert-wrapper {
+  .alert-md .alert-wrapper {
     border-radius: 46px;
     max-width: 280px;
     background-color: #fafafa;
@@ -26346,7 +26369,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     margin-top: 60px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-md .alert-button-group {
+  .alert-md .alert-button-group {
     -webkit-flex-wrap: wrap-reverse;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -26356,7 +26379,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     justify-content: center;
     padding: 8px 8px 8px 24px;
   }
-  page-minhacarteira .alert-md .alert-button {
+  .alert-md .alert-button {
     text-align: right;
     text-align: center;
     border-radius: 2px;
@@ -26372,13 +26395,13 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     border-radius: 30px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-md .alert-button .button-inner {
+  .alert-md .alert-button .button-inner {
     -webkit-box-pack: center;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: center;
   }
-  page-minhacarteira .alert-md .alert-input {
+  .alert-md .alert-input {
     margin: 5px 0px;
     border: 1px solid #707070;
     color: #000;
@@ -26386,7 +26409,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     padding: 10px;
     background: #E2E2E2;
   }
-  page-minhacarteira .alert-ios .alert-wrapper {
+  .alert-ios .alert-wrapper {
     border-radius: 46px;
     max-width: 280px;
     background-color: #fafafa;
@@ -26395,7 +26418,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     margin-top: 60px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-ios .alert-button-group {
+  .alert-ios .alert-button-group {
     -webkit-flex-wrap: wrap-reverse;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -26405,7 +26428,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     justify-content: center;
     padding: 8px 8px 8px 24px;
   }
-  page-minhacarteira .alert-ios .alert-button {
+  .alert-ios .alert-button {
     text-align: right;
     text-align: center;
     border-radius: 2px;
@@ -26421,13 +26444,13 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     border-radius: 30px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-ios .alert-button .button-inner {
+  .alert-ios .alert-button .button-inner {
     -webkit-box-pack: center;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: center;
   }
-  page-minhacarteira .alert-ios .alert-input {
+  .alert-ios .alert-input {
     margin: 5px 0px;
     border: 1px solid #707070;
     color: #000;
@@ -26438,18 +26461,18 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
 }
 
 @media (max-width: 375px) {
-  page-minhacarteira .alert-md .alert-title {
+  .alert-md .alert-title {
     font-size: 1.2em;
     text-align: center;
     font-weight: 900;
   }
-  page-minhacarteira .alert-md .alert-sub-title {
+  .alert-md .alert-sub-title {
     font-size: 1em;
     text-align: center;
     font-weight: 600;
     color: #4B4B4B;
   }
-  page-minhacarteira .alert-md .alert-wrapper {
+  .alert-md .alert-wrapper {
     border-radius: 46px;
     max-width: 280px;
     background-color: #fafafa;
@@ -26458,7 +26481,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     margin-top: 60px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-md .alert-button-group {
+  .alert-md .alert-button-group {
     -webkit-flex-wrap: wrap-reverse;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -26468,7 +26491,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     justify-content: center;
     padding: 8px 8px 8px 24px;
   }
-  page-minhacarteira .alert-md .alert-button {
+  .alert-md .alert-button {
     text-align: right;
     text-align: center;
     border-radius: 2px;
@@ -26484,13 +26507,13 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     border-radius: 30px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-md .alert-button .button-inner {
+  .alert-md .alert-button .button-inner {
     -webkit-box-pack: center;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: center;
   }
-  page-minhacarteira .alert-md .alert-input {
+  .alert-md .alert-input {
     margin: 5px 0px;
     border: 1px solid #707070;
     color: #000;
@@ -26498,18 +26521,18 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     padding: 10px;
     background: #E2E2E2;
   }
-  page-minhacarteira .alert-ios .alert-title {
+  .alert-ios .alert-title {
     font-size: 1.2em;
     text-align: center;
     font-weight: 900;
   }
-  page-minhacarteira .alert-ios .alert-sub-title {
+  .alert-ios .alert-sub-title {
     font-size: 1em;
     text-align: center;
     font-weight: 600;
     color: #4B4B4B;
   }
-  page-minhacarteira .alert-ios .alert-wrapper {
+  .alert-ios .alert-wrapper {
     border-radius: 46px;
     max-width: 280px;
     background-color: #fafafa;
@@ -26518,7 +26541,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     margin-top: 60px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-ios .alert-button-group {
+  .alert-ios .alert-button-group {
     -webkit-flex-wrap: wrap-reverse;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -26528,7 +26551,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     justify-content: center;
     padding: 8px 8px 8px 24px;
   }
-  page-minhacarteira .alert-ios .alert-button {
+  .alert-ios .alert-button {
     text-align: right;
     text-align: center;
     border-radius: 2px;
@@ -26544,13 +26567,13 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     border-radius: 30px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-ios .alert-button .button-inner {
+  .alert-ios .alert-button .button-inner {
     -webkit-box-pack: center;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: center;
   }
-  page-minhacarteira .alert-ios .alert-input {
+  .alert-ios .alert-input {
     margin: 5px 0px;
     border: 1px solid #707070;
     color: #000;
@@ -26561,34 +26584,24 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
 }
 
 @media (max-width: 411px) {
-  page-minhacarteira page-minhacarteira ion-card-header {
+  page-minhacarteira ion-card-header {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  page-minhacarteira page-minhacarteira #moeda {
-    top: 18%;
-  }
-  page-minhacarteira page-minhacarteira #valor {
-    top: 16%;
-  }
-  page-minhacarteira page-minhacarteira #btn-resgate {
-    left: 22%;
-    top: 30%;
-  }
-  page-minhacarteira .alert-md .alert-title {
+  .alert-md .alert-title {
     font-size: 1.2em;
     text-align: center;
     font-weight: 900;
   }
-  page-minhacarteira .alert-md .alert-sub-title {
+  .alert-md .alert-sub-title {
     font-size: 1em;
     text-align: center;
     font-weight: 600;
     color: #4B4B4B;
   }
-  page-minhacarteira .alert-md .alert-wrapper {
+  .alert-md .alert-wrapper {
     border-radius: 46px;
     max-width: 280px;
     background-color: #fafafa;
@@ -26597,7 +26610,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     margin-top: 60px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-md .alert-button-group {
+  .alert-md .alert-button-group {
     -webkit-flex-wrap: wrap-reverse;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -26607,7 +26620,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     justify-content: center;
     padding: 8px 8px 8px 24px;
   }
-  page-minhacarteira .alert-md .alert-button {
+  .alert-md .alert-button {
     text-align: right;
     text-align: center;
     border-radius: 2px;
@@ -26623,13 +26636,13 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     border-radius: 30px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-md .alert-button .button-inner {
+  .alert-md .alert-button .button-inner {
     -webkit-box-pack: center;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: center;
   }
-  page-minhacarteira .alert-md .alert-input {
+  .alert-md .alert-input {
     margin: 5px 0px;
     border: 1px solid #707070;
     color: #000;
@@ -26637,18 +26650,18 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     padding: 10px;
     background: #E2E2E2;
   }
-  page-minhacarteira .alert-ios .alert-title {
+  .alert-ios .alert-title {
     font-size: 1.2em;
     text-align: center;
     font-weight: 900;
   }
-  page-minhacarteira .alert-ios .alert-sub-title {
+  .alert-ios .alert-sub-title {
     font-size: 1em;
     text-align: center;
     font-weight: 600;
     color: #4B4B4B;
   }
-  page-minhacarteira .alert-ios .alert-wrapper {
+  .alert-ios .alert-wrapper {
     border-radius: 46px;
     max-width: 280px;
     background-color: #fafafa;
@@ -26657,7 +26670,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     margin-top: 60px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-ios .alert-button-group {
+  .alert-ios .alert-button-group {
     -webkit-flex-wrap: wrap-reverse;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
@@ -26667,7 +26680,7 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     justify-content: center;
     padding: 8px 8px 8px 24px;
   }
-  page-minhacarteira .alert-ios .alert-button {
+  .alert-ios .alert-button {
     text-align: right;
     text-align: center;
     border-radius: 2px;
@@ -26683,13 +26696,13 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     border-radius: 30px;
     border: 1px solid #707070;
   }
-  page-minhacarteira .alert-ios .alert-button .button-inner {
+  .alert-ios .alert-button .button-inner {
     -webkit-box-pack: center;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: center;
   }
-  page-minhacarteira .alert-ios .alert-input {
+  .alert-ios .alert-input {
     margin: 5px 0px;
     border: 1px solid #707070;
     color: #000;
@@ -26697,10 +26710,10 @@ page-minhacarteira ion-alert.alert-md.img-alert-confirm {
     padding: 10px;
     background: #E2E2E2;
   }
-  page-minhacarteira page-minhacarteira ion-card-title.card-title.card-title-md {
+  page-minhacarteira ion-card-title.card-title.card-title-md {
     font-size: 0.9em;
   }
-  page-minhacarteira page-minhacarteira ion-card-title.card-title.card-title-ios {
+  page-minhacarteira ion-card-title.card-title.card-title-ios {
     font-size: 0.9em;
   }
 }
@@ -27070,6 +27083,40 @@ page-singup .select-icon {
   float: right;
 }
 
+page-singup .list-singup {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+page-singup .list-singup > ion-list {
+  padding: 16px;
+}
+
+page-singup .list-singup > ion-item {
+  background-color: transparent;
+  padding: 2px;
+  margin: 8px 0;
+  color: white;
+}
+
+page-singup .list-singup .input-cover {
+  background-color: #3E4989;
+  border: none;
+}
+
+page-singup .list-md .item-input:last-child {
+  border-bottom: none;
+}
+
 page-welcome .content-md {
   color: #fff;
   background-color: #101C6E;
@@ -27099,7 +27146,7 @@ page-welcome .btn-entrar {
   border-radius: 12px;
 }
 
-page-welcome .btn-login {
+page-welcome .btn-singup {
   background-color: #43D935;
   border-radius: 12px;
   margin: 10px  0 -20px 0;
@@ -27124,4 +27171,42 @@ page-welcome ion-input.input.input-ios {
   border-radius: 12px;
   background-color: #3E4989;
   z-index: -1;
+}
+
+page-welcome .list-singup {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+page-welcome .list-singup > ion-list {
+  padding: 16px;
+}
+
+page-welcome .list-singup > ion-item {
+  background-color: transparent;
+  padding: 2px;
+  margin: 8px 0;
+  color: white;
+}
+
+page-welcome .list-singup .input-cover {
+  background-color: #3E4989;
+  border: none;
+}
+
+page-welcome .list-md .item-input:last-child {
+  border-bottom: none;
+}
+
+page-welcome .list-md .item-block .item-inner {
+  border-bottom: none;
 }

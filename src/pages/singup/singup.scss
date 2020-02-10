@@ -121,7 +121,7 @@ ion-item.item.item-block.item-ios.item-checkbox {
     background: #101c6e0a;
 }
 ion-list.inline-flex.list.list-ios {
-    width: 100%;
+    width: 100%;    
 }
 ion-checkbox.checkbox.checkbox-md{
     margin:5px!important;
@@ -134,7 +134,7 @@ ion-app.ios{
 
 }
 ion-select{
-    max-width: max-content;
+    max-width: max-content; 
 }
 ion-input.input.input-ios{
     border-radius: 12px;
@@ -145,4 +145,27 @@ ion-input.input.input-ios{
     position: absolute;
     float: right;
     }
+
+
+    .list-singup{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .list-singup > ion-list{
+        padding: 16px;
+    }
+    .list-singup > ion-item{
+        background-color: transparent;
+        padding: 2px;
+        margin: 8px 0;
+        color: white
+    }
+    .list-singup .input-cover{
+        background-color: #3E4989;
+        border: none;
+    }
+    .list-md .item-input:last-child {
+        border-bottom: none;
+      }
 }

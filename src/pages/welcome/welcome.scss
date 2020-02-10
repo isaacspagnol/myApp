@@ -23,7 +23,7 @@ page-welcome{
   background-color: #1834D8;
   border-radius: 12px;
   }
-  .btn-login{
+  .btn-singup{
     background-color: #43D935;
     border-radius: 12px;
     margin: 10px  0 -20px 0;
@@ -45,4 +45,30 @@ page-welcome{
     background-color: #3E4989;
     z-index: -1;
 }
+
+.list-singup{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.list-singup > ion-list{
+  padding: 16px;
+}
+.list-singup > ion-item{
+  background-color: transparent;
+  padding: 2px;
+  margin: 8px 0;
+  color: white
+}
+.list-singup .input-cover{
+  background-color: #3E4989;
+  border: none;
+}
+.list-md .item-input:last-child {
+  border-bottom: none;
+}
+.list-md .item-block .item-inner {
+  border-bottom: none;
+  }
+  
 }

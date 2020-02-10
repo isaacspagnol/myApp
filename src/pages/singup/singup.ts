@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, Slides} from 'ionic-angular';
 import * as $ from "jquery";
-import { ViewChild } from '@angular/core';
-import { Slides } from 'ionic-angular';
+
 
 
 
@@ -19,13 +18,14 @@ import { Slides } from 'ionic-angular';
   templateUrl: 'singup.html'
 })
 export class SingupPage {
-  @ViewChild(Slides) slides: Slides;
 
-  goToSlide() {
-    this.slides.slideTo(2, 500);
-  }
-  
-  constructor(public navCtrl: NavController) { }
+  isTextFieldType: boolean;
+  isTextFieldType2: boolean;
+// passwordType: string = 'password';
+// passwordShown: boolean = false;
+
+
+constructor(public navCtrl: NavController) { }
 
   login() {
     this.navCtrl.push('MenuPage');
@@ -34,25 +34,31 @@ export class SingupPage {
   signup() {
     this.navCtrl.push('MenuPage');
   }
-  
-}
-$(document).ready(function(){
-  $(".MEI").click(function(){
-    $("#CNPJ").show();
-    $("#PIS").hide();
-    $("#CNPJ").removeClass("hide");
-  });
-});
 
-$(document).ready(function(){
-  $(".PisCheck").click(function(){
-    $("#PIS").show();
-    $("#CNPJ").hide();
-    $("#PIS").removeClass("hide");
-  });
-});
+  togglePasswordFieldType(){
+    this.isTextFieldType = !this.isTextFieldType;
+  } 
+  togglePasswordFieldType2(){
+    this.isTextFieldType2 = !this.isTextFieldType2;
+  }
 
 
-// $( "ion-label" ).on( "click", function() {
-//   $( "#pis-radio" ).html( $( "ion-radio:checked" ).val() + " " );
-// });
+
+/**
+ * togglePassword
+ */
+  // public togglePassword() {
+  //     if(this.passwordShown){
+  //       this.passwordShown = false;
+  //       this.passwordType  = 'password';
+  //     }else{
+  //       this.passwordShown = true;
+  //       this.passwordType  = 'password';
+  //     }
+  //   }
+    
+  }
+
+
+
+
