@@ -1,4 +1,9 @@
 page-menu {
+    .icon-cards{
+        max-height: 110px;
+        max-width: 116px;
+        margin: 4px auto;
+    }
     .content-md {
         color: #000!important;
         background-color: #FFF!important;
@@ -11,7 +16,7 @@ page-menu {
         background: #f0f8ff00;
     }
     ion-card.card.card-md {
-        height: 140px;
+        height: 150px;
         border-radius: 12px;
         background-color: #101C6E;
         padding: 6px;

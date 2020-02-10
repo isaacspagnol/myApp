@@ -25920,6 +25920,12 @@ page-cadastro-banco button.disable-hover.alert-button.alert-button-md.alert-butt
   padding: 12px;
 }
 
+page-menu .icon-cards {
+  max-height: 110px;
+  max-width: 116px;
+  margin: 4px auto;
+}
+
 page-menu .content-md {
   color: #000 !important;
   background-color: #FFF !important;
@@ -25935,7 +25941,7 @@ page-menu button {
 }
 
 page-menu ion-card.card.card-md {
-  height: 140px;
+  height: 150px;
   border-radius: 12px;
   background-color: #101C6E;
   padding: 6px;
