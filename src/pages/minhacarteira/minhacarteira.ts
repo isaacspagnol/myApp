@@ -5,6 +5,7 @@ import { AlertController } from 'ionic-angular';
 
 
 
+
 interface PageItem {
   title: string
   component: any
@@ -20,7 +21,6 @@ export class MinhacarteiraPage{
   // A reference to the ion-nav in our component
   @ViewChild(Nav) nav: Nav;
 
-
   rootPage: any = 'ContentPage';
 
   pages: PageList;
@@ -32,8 +32,14 @@ export class MinhacarteiraPage{
 
 constructor(
   private alertCtrl: AlertController,
-  public  navCtrl: NavController
+  public  navCtrl: NavController,
     ) {
+
+     
+
+
+
+
   this.estado = "disponivel";
   
 
@@ -142,7 +148,7 @@ constructor(
           text: 'VALIDAR NOTA',
           role: 'VALIDAR NOTA',
           handler: data => {
-            console.log('VALIDAR NOTA CLICKED');
+            this.navCtrl.push('ResumoPage');
           }
         },
       ]
@@ -163,7 +169,7 @@ constructor(
           }
         },
       ]
-    });
+    }); 
     alert.present();
   }
 

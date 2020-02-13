@@ -2,6 +2,11 @@ import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { IonicPageModule } from 'ionic-angular';
 
+
+
+
+
+
 import { MenuPage } from './menu';
 
 @NgModule({
@@ -10,10 +15,11 @@ import { MenuPage } from './menu';
   ],
   imports: [
     IonicPageModule.forChild(MenuPage),
-    TranslateModule.forChild()
-  ],
+    TranslateModule.forChild(),
+    ],
   exports: [
-    MenuPage
+    MenuPage,
   ]
 })
 export class MenuPageModule { }
+      
