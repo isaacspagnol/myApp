@@ -26,7 +26,7 @@ var map = {
 		6
 	],
 	"../pages/menu/menu.module": [
-		329,
+		332,
 		5
 	],
 	"../pages/minhacarteira/minhacarteira.module": [
@@ -34,11 +34,11 @@ var map = {
 		4
 	],
 	"../pages/perfil/perfil.module": [
-		331,
+		329,
 		3
 	],
 	"../pages/resumo/resumo.module": [
-		332,
+		331,
 		2
 	],
 	"../pages/singup/singup.module": [
@@ -345,10 +345,10 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/cadastro-banco/cadastro-banco.module#CadastroBancoPageModule', name: 'CadastroBancoPage', segment: 'cadastro-banco', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/minhacarteira/minhacarteira.module#MinhacarteiraPageModule', name: 'MinhacarteiraPage', segment: 'minhacarteira', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/perfil/perfil.module#PerfilPageModule', name: 'PerfilPage', segment: 'perfil', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/minhacarteira/minhacarteira.module#MinhacarteiraPageModule', name: 'MinhacarteiraPage', segment: 'minhacarteira', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/resumo/resumo.module#ResumoPageModule', name: 'ResumoPage', segment: 'resumo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/singup/singup.module#SingupPageModule', name: 'SingupPage', segment: 'singup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
                     ]
