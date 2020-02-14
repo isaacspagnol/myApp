@@ -1,0 +1,55 @@
+page-historico-pagamentos {
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+        background-color:rgb(0, 176, 193)!important;
+        border-radius:12px;
+        color: white!important;
+        margin:2px;
+        border-color:white;
+        margin:2px;
+    }
+    .segment-md .segment-button.activated, .segment-ios .segment-button.segment-activated{
+        background-color:rgb(0, 176, 193)!important;
+        border-radius:12px;
+        color: white!important;
+        margin:2px;
+        border-color:white;
+        margin:2px;
+    }
+    ion-segment-button.segment-button{
+        color: black!important;
+        border-radius: 12px;
+        background-color: white!important;
+        border: none!important;
+        margin:2px;
+        padding:0;
+        text-align: center;
+    }
+    ion-label.label.label-md{
+        padding:0!important;
+        text-align: center;
+        margin: 0;
+    }
+    ion-card.card-vendas.card.card-ios{
+        height: 100px;
+        margin: 20px 0;
+    }
+    ion-label.label.label-ios{
+        padding:0!important;
+        text-align: center;
+        margin: 0;
+    }
+
+    .card-pagamentos{
+        border-radius: 12px;
+        box-shadow: none!important;
+        border: 1px solid #ddd;
+        padding: 6px 0;
+    }
+    .disponivel{
+        font-weight: 800;
+        color:black;
+        font-size: 1.6em;
+        padding: 4px;
+
+    }
+}

@@ -25920,6 +25920,66 @@ page-cadastro-banco button.disable-hover.alert-button.alert-button-md.alert-butt
   padding: 12px;
 }
 
+page-historico-pagamentos .segment-md .segment-button.activated, page-historico-pagamentos .segment-md .segment-button.segment-activated {
+  background-color: #00b0c1 !important;
+  border-radius: 12px;
+  color: white !important;
+  margin: 2px;
+  border-color: white;
+  margin: 2px;
+}
+
+page-historico-pagamentos .segment-md .segment-button.activated, page-historico-pagamentos .segment-ios .segment-button.segment-activated {
+  background-color: #00b0c1 !important;
+  border-radius: 12px;
+  color: white !important;
+  margin: 2px;
+  border-color: white;
+  margin: 2px;
+}
+
+page-historico-pagamentos ion-segment-button.segment-button {
+  color: black !important;
+  border-radius: 12px;
+  background-color: white !important;
+  border: none !important;
+  margin: 2px;
+  padding: 0;
+  text-align: center;
+}
+
+page-historico-pagamentos ion-label.label.label-md {
+  padding: 0 !important;
+  text-align: center;
+  margin: 0;
+}
+
+page-historico-pagamentos ion-card.card-vendas.card.card-ios {
+  height: 100px;
+  margin: 20px 0;
+}
+
+page-historico-pagamentos ion-label.label.label-ios {
+  padding: 0 !important;
+  text-align: center;
+  margin: 0;
+}
+
+page-historico-pagamentos .card-pagamentos {
+  border-radius: 12px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #ddd;
+  padding: 6px 0;
+}
+
+page-historico-pagamentos .disponivel {
+  font-weight: 800;
+  color: black;
+  font-size: 1.6em;
+  padding: 4px;
+}
+
 page-menu .icon-cards {
   max-height: 110px;
   max-width: 116px;

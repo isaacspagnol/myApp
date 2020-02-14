@@ -23,31 +23,35 @@ webpackEmptyAsyncContext.id = 129;
 var map = {
 	"../pages/cadastro-banco/cadastro-banco.module": [
 		328,
-		6
+		16
+	],
+	"../pages/historico-pagamentos/historico-pagamentos.module": [
+		342,
+		15
 	],
 	"../pages/menu/menu.module": [
 		332,
-		5
+		14
 	],
 	"../pages/minhacarteira/minhacarteira.module": [
 		330,
-		4
+		13
 	],
 	"../pages/perfil/perfil.module": [
 		329,
-		3
+		12
 	],
 	"../pages/resumo/resumo.module": [
 		331,
-		2
+		11
 	],
 	"../pages/singup/singup.module": [
 		333,
-		1
+		10
 	],
 	"../pages/welcome/welcome.module": [
 		334,
-		0
+		9
 	]
 };
 function webpackAsyncContext(req) {
@@ -350,7 +354,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/resumo/resumo.module#ResumoPageModule', name: 'ResumoPage', segment: 'resumo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/singup/singup.module#SingupPageModule', name: 'SingupPage', segment: 'singup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/historico-pagamentos/historico-pagamentos.module#HistoricoPagamentosPageModule', name: 'HistoricoPagamentosPage', segment: 'historico-pagamentos', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()

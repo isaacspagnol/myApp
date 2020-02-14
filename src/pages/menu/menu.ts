@@ -23,5 +23,8 @@ export class MenuPage {
   }
   perfil() {
     this.navCtrl.push('PerfilPage');
+  }  
+  historicoPagamentos() {
+    this.navCtrl.push('page-historico-pagamentos');
   }   
 }

@@ -31,18 +31,9 @@ export class MinhacarteiraPage{
  estado = "disponivel";
 
 constructor(
-  private alertCtrl: AlertController,
-  public  navCtrl: NavController,
-    ) {
-
-     
-
-
-
+  private alertCtrl: AlertController,public  navCtrl: NavController) {
 
   this.estado = "disponivel";
-  
-
   this.vendasDisponiveis = [
     {
       venda: {

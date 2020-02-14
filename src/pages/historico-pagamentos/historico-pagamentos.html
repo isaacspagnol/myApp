@@ -1,0 +1,72 @@
+<ion-header class="header">
+  <ion-navbar>
+
+     <ion-title class="align-center logo">
+        <img src="./assets/img/logoLoumar.svg" alt="" srcset="">
+     </ion-title>
+
+     <ion-buttons end>
+        <button  (click)="Menu()">
+        <img src="./assets/img/home.png" alt="" style="max-height: 15px;" srcset="">
+        </button>
+     </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content scroll="true" >
+  <div class="ion-padding">
+     <h2 class="align-center" >HISTÓRICO DE PAGAMENTOS</h2>
+  </div>
+
+  
+
+  <div class="padding-0-16">
+     <ion-segment  [(ngModel)]="estado" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="disponivel" id="disponivel">
+           <ion-label>PAGO</ion-label>
+        </ion-segment-button>
+        <ion-segment-button  value="em espera" id="emEspera">
+           <ion-label>PROCESSANDO</ion-label>
+        </ion-segment-button>
+     </ion-segment>
+  </div>
+
+
+  <div>
+     <ion-list>
+        <ion-item>
+
+           <div class="content-cards">
+              <ion-card *ngFor="let item of vendasDisponiveis" class="card-pagamentos" >
+                 <ion-grid>
+                    <ion-row>
+                       <ion-col col-8>
+                          <h2 class="text-left card-comissao-content ptop-10">VALOR DO SAQUE</h2>
+                          <p class="text-left nVenda font-800">N° DA NOTA <span>{{item.venda.nVenda}}</span></p>
+                       </ion-col>
+                       <ion-col col-2 class="fit-content ptop-10">
+                          <h2 class="text-right cVenda ptop-10 disponivel" >R$ <span>{{item.venda.cVenda}}</span></h2>
+                       </ion-col>
+                    </ion-row>
+                 </ion-grid>
+              </ion-card>                  
+           </div>
+
+        </ion-item>
+     </ion-list>
+     
+     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+     </ion-infinite-scroll>
+
+  </div>
+    
+
+
+
+
+
+
+  </ion-content>
