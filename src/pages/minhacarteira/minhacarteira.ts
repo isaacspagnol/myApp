@@ -124,47 +124,8 @@ constructor(
     })
   }
   validarNota() {
-    let alert = this.alertCtrl.create({
-      title: 'VALIDE N° DA NOTA FISCAL',
-      subTitle: 'INSIRA O NUMERO DA NOTA ABAIXO',
-      inputs: [
-        {
-          name: 'NmNota',
-          placeholder: 'N° da nota'
-        },
-        
-      ],
-      buttons: [
-        {
-          text: 'VALIDAR NOTA',
-          role: 'VALIDAR NOTA',
-          handler: data => {
-            this.navCtrl.push('ResumoPage');
-          }
-        },
-      ]
-    });
-    alert.present();
+    this.navCtrl.push('DadosPagamentoPage');
   }
-
-  notavalidada() {
-    let alert = this.alertCtrl.create({
-      title: 'Nota validada',
-      subTitle:'<img src="./assets/img/check.png">',
-      buttons: [
-        {
-          text: 'VER RESUMO DA COMPRA ',
-          role: 'NOTA VALIDADA',
-          handler: data => {
-            this.navCtrl.push('ResumoPage');
-          }
-        },
-      ]
-    }); 
-    alert.present();
-  }
-
-
 }
 
 

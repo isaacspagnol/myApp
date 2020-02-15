@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900&display=swap");
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -25734,6 +25734,7 @@ h2 {
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  font-size: 1.2em;
 }
 
 .align-center {
@@ -25767,6 +25768,10 @@ p {
   color: white;
 }
 
+.list-style-none {
+  list-style: none;
+}
+
 .ptop-5 {
   padding-top: 5px;
 }
@@ -25791,12 +25796,28 @@ p {
   padding: 0 16px;
 }
 
+.padding-16 {
+  padding: 16px;
+}
+
 .font-600 {
   font-weight: 600 !important;
 }
 
+.font-400 {
+  font-weight: 400;
+}
+
 .font-800 {
   font-weight: 800 !important;
+}
+
+.font-1-3em {
+  font-size: 1.3em;
+}
+
+.line-height-1.4 {
+  line-height: 1.4;
 }
 
 .fit-content {
@@ -25821,6 +25842,20 @@ p {
   border-radius: 12px;
   margin: 10px  0 -20px 0;
   width: 100%;
+}
+
+.btn-confirm {
+  background-color: #43D935;
+  border-radius: 12px;
+}
+
+.btn-cancel {
+  background-color: #488aff;
+  border-radius: 12px;
+}
+
+.container-center {
+  margin: 0 auto;
 }
 
 .list-ios > .item-block:first-child {
@@ -25918,6 +25953,32 @@ page-cadastro-banco button.disable-hover.alert-button.alert-button-md.alert-butt
   border-radius: 12px;
   border: 1px solid #707070;
   padding: 12px;
+}
+
+page-dados-pagamento .list-md .item-block .item-inner {
+  border: none;
+}
+
+page-dados-pagamento .list-md .item-input:last-child {
+  border: none;
+}
+
+page-dados-pagamento .list-md .item-input.item-input-has-focus:last-child, page-dados-pagamento .list-md .item-input.input-has-focus:last-child {
+  border-bottom-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+page-dados-pagamento .input-nota {
+  background: #ddd;
+  border-radius: 10px;
+  border: none;
+}
+
+page-dados-pagamento .text-italic {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: italic;
 }
 
 page-historico-pagamentos .segment-md .segment-button.activated, page-historico-pagamentos .segment-md .segment-button.segment-activated {

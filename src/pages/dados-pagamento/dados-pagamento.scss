@@ -1,0 +1,23 @@
+page-dados-pagamento {
+    .list-md .item-block .item-inner{
+        border: none;
+    }
+    .list-md .item-input:last-child{
+        border: none;
+    }
+    .list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child {
+        border-bottom-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+   .input-nota{
+       background: #ddd;
+       border-radius: 10px;
+       border: none;
+   }
+   .text-italic{
+       font-family: 'Roboto';
+       font-weight: 400;
+       font-style: italic;
+   }
+}

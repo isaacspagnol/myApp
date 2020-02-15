@@ -14,8 +14,7 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +45,7 @@ h2{
 p{
     font-family: 'Roboto', sans-serif;
     font-weight:100;
+    font-size: 1.2em;
 }
 .align-center{
     text-align: center;
@@ -68,6 +68,9 @@ p{
 .color-white {
     color: white;
 }
+.list-style-none{
+    list-style: none;
+}
 .ptop-5 {padding-top: 5px;}
 .ptop-10{padding-top: 10px;}
 .ptop-12{padding-top: 12px;}
@@ -76,11 +79,23 @@ p{
 .padding-0-16{
     padding: 0 16px;
   }
+.padding-16{
+    padding: 16px;
+}
 .font-600{
     font-weight: 600!important;
 }
+.font-400{
+    font-weight: 400;
+}
 .font-800{
     font-weight: 800!important;
+}
+.font-1-3em{
+    font-size: 1.3em;
+}
+.line-height-1.4{
+    line-height: 1.4;
 }
 .fit-content{
     height: fit-content;
@@ -101,6 +116,21 @@ p{
     margin: 10px  0 -20px 0;
     width: 100%;
   }
+.btn-confirm{
+    background-color: #43D935;
+    border-radius: 12px;
+}
+.btn-cancel{
+    background-color: #488aff;
+    border-radius: 12px;
+}
+.container-center{
+    margin: 0 auto;
+}
+
+
+
+
   .list-ios > .item-block:first-child{
       border-top: none;
       border:none;

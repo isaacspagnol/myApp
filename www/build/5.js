@@ -1,15 +1,15 @@
 webpackJsonp([5],{
 
-/***/ 333:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingupPageModule", function() { return SingupPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuPageModule", function() { return MenuPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__singup__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu__ = __webpack_require__(340);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,27 +20,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SingupPageModule = /** @class */ (function () {
-    function SingupPageModule() {
+var MenuPageModule = /** @class */ (function () {
+    function MenuPageModule() {
     }
-    SingupPageModule = __decorate([
+    MenuPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__singup__["a" /* SingupPage */],
+                __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__singup__["a" /* SingupPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild(),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__singup__["a" /* SingupPage */]
+                __WEBPACK_IMPORTED_MODULE_3__menu__["a" /* MenuPage */],
             ]
         })
-    ], SingupPageModule);
-    return SingupPageModule;
+    ], MenuPageModule);
+    return MenuPageModule;
 }());
 
-//# sourceMappingURL=singup.module.js.map
+//# sourceMappingURL=menu.module.js.map
 
 /***/ }),
 
@@ -48,7 +48,7 @@ var SingupPageModule = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingupPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -62,40 +62,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * The Welcome Page is a splash page that quickly describes the app,
- * and then directs the user to create an account or log in.
- * If you'd like to immediately put the user onto a login/signup page,
- * we recommend not using the Welcome page.
-*/
-var SingupPage = /** @class */ (function () {
-    // passwordType: string = 'password';
-    // passwordShown: boolean = false;
-    function SingupPage(navCtrl) {
+var MenuPage = /** @class */ (function () {
+    function MenuPage(navCtrl) {
         this.navCtrl = navCtrl;
+        this.rootPage = 'ContentPage';
     }
-    SingupPage.prototype.login = function () {
-        this.navCtrl.push('MenuPage');
+    MenuPage.prototype.minhaCarteira = function () {
+        this.navCtrl.push('MinhacarteiraPage');
     };
-    SingupPage.prototype.signup = function () {
-        this.navCtrl.push('MenuPage');
+    MenuPage.prototype.perfil = function () {
+        this.navCtrl.push('PerfilPage');
     };
-    SingupPage.prototype.togglePasswordFieldType = function () {
-        this.isTextFieldType = !this.isTextFieldType;
+    MenuPage.prototype.historicoPagamentos = function () {
+        this.navCtrl.push('HistoricoPagamentosPage');
     };
-    SingupPage.prototype.togglePasswordFieldType2 = function () {
-        this.isTextFieldType2 = !this.isTextFieldType2;
-    };
-    SingupPage = __decorate([
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
+    ], MenuPage.prototype, "nav", void 0);
+    MenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-singup',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\singup\singup.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="align-center logo">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n  <ion-content scroll="false" fullscreen>\n    <div class="ion-padding">\n      <h2 class="align-center" >CADASTRO</h2>\n      \n    </div>\n\n    <div padding>\n      \n       <form action="">\n         <ion-list class="list-singup">\n              <ion-item>  \n                  <ion-input type="text" required placeholder="Digite seu nome"></ion-input>\n              </ion-item>\n              <ion-item>\n                <ion-input type="email" placeholder="Digite seu e-mail ou telefone"></ion-input>\n\n              </ion-item>\n              <ion-item>\n                <ion-input [type]="isTextFieldType ? \'text\' : \'password\'" placeholder="Escolha sua senha"></ion-input>\n                <ion-icon [name]="isTextFieldType ? \'eye-off\' : \'eye\'" color="gray" item-end  (click)="togglePasswordFieldType()"></ion-icon>\n\n\n              </ion-item>\n              <ion-item>\n                <ion-input  [type]="isTextFieldType2 ? \'text\' : \'password\'" placeholder="Confirme sua senha"></ion-input>\n                <ion-icon  [name]="isTextFieldType2 ? \'eye-off\' : \'eye\'" color="gray" item-end  (click)="togglePasswordFieldType2()"></ion-icon>\n              </ion-item>\n          </ion-list>\n\n            \n            <div padding id="continuarCadastro">\n                <button (click)="login()" ion-button class="  btn-login">{{ \'FINALIZAR CADASTRO\'}}</button>\n            </div>\n     \n       </form>\n    </div>\n\n\n    <div padding>\n        <p class="align-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>\n      </div>\n  </ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\singup\singup.html"*/
+            selector: 'page-menu',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\menu\menu.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="align-center logo">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n\n    <ion-content scroll="false">\n        <ion-grid>\n            <ion-row>\n                <ion-col >\n                    <div padding >\n                        <button (click)="perfil()" ion-button class="btn-cadastro-incompleto">{{ \'CADASTRO INCOMPLETO\'}}\n                          <img src="./assets/img/Icon-hand-pointer.png" class="pleft-15">\n\n                        </button>\n                    </div>\n                 </ion-col>\n              <ion-col>\n                  <div >\n                    <p class="text-center font-600 font-1-5em text-uppercase">Seu codigo Loumar é:</p>\n                   <p class="text-center"> \n                     <button ion-button   class="codigo-loumar" id="codigo-loumar">\n                      734874387\n                    </button>\n                  </p>\n                  </div>\n              </ion-col>\n              \n            </ion-row>\n        </ion-grid>\n      <!-- <div class="ion-padding">\n        <h2 class="align-center" >SELECIONE UMA OPÇÃO</h2>\n      </div> -->\n      \n          <ion-grid>\n            <ion-row>\n              <ion-col>\n                <div  (click)="minhaCarteira()" >\n                  <ion-card >\n                    <ion-card-content>\n                     <img src="./assets/img/cartera.png" class="icon-cards" alt="" srcset="">\n                    </ion-card-content>\n                  </ion-card>\n                  <p class="align-center"><strong>MINHA CARTEIRA</strong></p>\n                </div>\n              </ion-col>\n              <ion-col>\n                <div> \n                   <ion-card>\n                    <ion-card-content>\n                        <img src="./assets/img/catalogo.png" class="icon-cards" alt="" srcset="">\n                    </ion-card-content>\n                  </ion-card>\n                  <p class="align-center"><strong>CATALOGO</strong></p>\n                </div>\n              </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col>\n                  <div>\n                    <ion-card>\n                      <ion-card-content>\n                       <img src="./assets/img/pontos-de-vendas.png" class="icon-cards" alt="" srcset="">\n                      </ion-card-content>\n                    </ion-card>\n                    <p class="align-center"><strong>PONTOS DE VENDAS</strong></p>\n                  </div>\n                </ion-col>\n                <ion-col>\n                  <div> \n                     <ion-card (click)="perfil()">\n                      <ion-card-content>\n                          <img src="./assets/img/hombre.png" class="icon-cards" alt="" srcset="">\n                      </ion-card-content>\n                    </ion-card>\n                    <p class="align-center"><strong>PERFIL</strong></p>\n                  </div>\n                </ion-col>\n              </ion-row>\n              <ion-row>\n              \n                <ion-col>\n                  <div> \n                     <ion-card (click)="historicoPagamentos()">\n                      <ion-card-content>\n                          <img src="./assets/img/historico.png " class="icon-cards" alt="" srcset="">\n                      </ion-card-content>\n                    </ion-card>\n                    <p class="align-center"><strong>HISTÓRICO DE RESGATE</strong></p>\n                  </div>\n                </ion-col>\n              </ion-row>\n            </ion-grid>\n      \n  \n    </ion-content>\n  '/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\menu\menu.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
-    ], SingupPage);
-    return SingupPage;
+    ], MenuPage);
+    return MenuPage;
 }());
 
-//# sourceMappingURL=singup.js.map
+//# sourceMappingURL=menu.js.map
 
 /***/ })
 

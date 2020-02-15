@@ -25,6 +25,6 @@ export class MenuPage {
     this.navCtrl.push('PerfilPage');
   }  
   historicoPagamentos() {
-    this.navCtrl.push('page-historico-pagamentos');
+    this.navCtrl.push('HistoricoPagamentosPage');
   }   
 }

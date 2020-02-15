@@ -1,14 +1,15 @@
 webpackJsonp([0],{
 
-/***/ 342:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HistoricoPagamentosPageModule", function() { return HistoricoPagamentosPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WelcomePageModule", function() { return WelcomePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__historico_pagamentos__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome__ = __webpack_require__(345);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +19,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var HistoricoPagamentosPageModule = /** @class */ (function () {
-    function HistoricoPagamentosPageModule() {
+
+var WelcomePageModule = /** @class */ (function () {
+    function WelcomePageModule() {
     }
-    HistoricoPagamentosPageModule = __decorate([
+    WelcomePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__historico_pagamentos__["a" /* HistoricoPagamentosPage */],
+                __WEBPACK_IMPORTED_MODULE_3__welcome__["a" /* WelcomePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__historico_pagamentos__["a" /* HistoricoPagamentosPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__welcome__["a" /* WelcomePage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__welcome__["a" /* WelcomePage */]
+            ]
         })
-    ], HistoricoPagamentosPageModule);
-    return HistoricoPagamentosPageModule;
+    ], WelcomePageModule);
+    return WelcomePageModule;
 }());
 
-//# sourceMappingURL=historico-pagamentos.module.js.map
+//# sourceMappingURL=welcome.module.js.map
 
 /***/ }),
 
-/***/ 343:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HistoricoPagamentosPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -57,29 +63,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the HistoricoPagamentosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HistoricoPagamentosPage = /** @class */ (function () {
-    function HistoricoPagamentosPage(navCtrl, navParams) {
+ * The Welcome Page is a splash page that quickly describes the app,
+ * and then directs the user to create an account or log in.
+ * If you'd like to immediately put the user onto a login/signup page,
+ * we recommend not using the Welcome page.
+*/
+var WelcomePage = /** @class */ (function () {
+    function WelcomePage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.navParams = navParams;
     }
-    HistoricoPagamentosPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HistoricoPagamentosPage');
+    WelcomePage.prototype.login = function () {
+        this.navCtrl.push('MenuPage');
     };
-    HistoricoPagamentosPage = __decorate([
+    WelcomePage.prototype.signup = function () {
+        this.navCtrl.push('SingupPage');
+    };
+    WelcomePage.prototype.togglePasswordFieldType = function () {
+        this.isTextFieldType = !this.isTextFieldType;
+    };
+    WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-historico-pagamentos',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\historico-pagamentos\historico-pagamentos.html"*/'<ion-header class="header">\n  <ion-navbar>\n\n     <ion-title class="align-center logo">\n        <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n     </ion-title>\n\n     <ion-buttons end>\n        <button  (click)="Menu()">\n        <img src="./assets/img/home.png" alt="" style="max-height: 15px;" srcset="">\n        </button>\n     </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content scroll="true" >\n  <div class="ion-padding">\n     <h2 class="align-center" >HISTÓRICO DE PAGAMENTOS</h2>\n  </div>\n\n  \n\n  <div class="padding-0-16">\n     <ion-segment  [(ngModel)]="estado" (ionChange)="segmentChanged($event)">\n        <ion-segment-button value="disponivel" id="disponivel">\n           <ion-label>PAGO</ion-label>\n        </ion-segment-button>\n        <ion-segment-button  value="em espera" id="emEspera">\n           <ion-label>PROCESSANDO</ion-label>\n        </ion-segment-button>\n     </ion-segment>\n  </div>\n\n\n  <div>\n     <ion-list>\n        <ion-item>\n\n           <div class="content-cards">\n              <ion-card *ngFor="let item of vendasDisponiveis" class="card-pagamentos" >\n                 <ion-grid>\n                    <ion-row>\n                       <ion-col col-8>\n                          <h2 class="text-left card-comissao-content ptop-10">VALOR DO SAQUE</h2>\n                          <p class="text-left nVenda font-800">N° DA NOTA <span>{{item.venda.nVenda}}</span></p>\n                       </ion-col>\n                       <ion-col col-2 class="fit-content ptop-10">\n                          <h2 class="text-right cVenda ptop-10 disponivel" >R$ <span>{{item.venda.cVenda}}</span></h2>\n                       </ion-col>\n                    </ion-row>\n                 </ion-grid>\n              </ion-card>                  \n           </div>\n\n        </ion-item>\n     </ion-list>\n     \n     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">\n        <ion-infinite-scroll-content></ion-infinite-scroll-content>\n     </ion-infinite-scroll>\n\n  </div>\n    \n\n\n\n\n\n\n  </ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\historico-pagamentos\historico-pagamentos.html"*/,
+            selector: 'page-welcome',template:/*ion-inline-start:"C:\projetos\loumarParceiros2\myApp\src\pages\welcome\welcome.html"*/'\n    <ion-header>\n      <ion-navbar>\n        <ion-title class="align-center logo">\n          <img src="./assets/img/logoLoumar.svg" alt="" srcset="">\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n\n  <ion-content scroll="false">\n    <div class="ion-padding">\n        <h2 class="align-center" >LOUMAR PARTNERS</h2>\n    </div>\n\n    <div class="padding-0-16">\n      <ion-list class="list-singup">\n        <ion-label>Codigo loumar ou e-mail</ion-label>\n\n        <ion-item>  \n\n            <ion-input type="text" required placeholder="Digite seu nome"></ion-input>\n        </ion-item>\n        <ion-label>Codigo loumar ou e-mail</ion-label>\n\n        <ion-item>\n          <ion-input [type]="isTextFieldType ? \'text\' : \'password\'" placeholder="Escolha sua senha"></ion-input>\n          <ion-icon [name]="isTextFieldType ? \'eye-off\' : \'eye\'" color="gray" item-end  (click)="togglePasswordFieldType()"></ion-icon>\n        </ion-item>\n        \n    </ion-list>\n    </div>\n\n    <div class="padding-0-16">\n      <button ion-button block (click)="login()" class="btn-entrar padding-0-16">{{ \'ENTRAR\'}}</button>\n\n      <p class="align-center">Esqueceu sua senha?</p>\n    </div>\n\n    <div padding>\n      <p class="align-center">NOVO AQUI E QUER SE CADASTRAR PARA GANHAR VANTAGENS?</p>\n        <button ion-button block (click)="signup()" class="btn-singup">{{ \'CADASTAR\'}}</button>\n    </div>\n\n    <div padding>\n        <p class="align-center">Dúvidas e erros entre em contato suporteparceiros@loumarturismo.com.br</p>\n      </div>\n  </ion-content>\n'/*ion-inline-end:"C:\projetos\loumarParceiros2\myApp\src\pages\welcome\welcome.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], HistoricoPagamentosPage);
-    return HistoricoPagamentosPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    ], WelcomePage);
+    return WelcomePage;
 }());
 
-//# sourceMappingURL=historico-pagamentos.js.map
+//# sourceMappingURL=welcome.js.map
 
 /***/ })
 

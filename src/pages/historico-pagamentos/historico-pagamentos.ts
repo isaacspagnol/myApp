@@ -24,7 +24,7 @@ export class HistoricoPagamentosPage {
   
   
   this.estado = "disponivel";
-  
+
   this.vendasDisponiveis = [
     {
       venda: {
@@ -79,7 +79,9 @@ export class HistoricoPagamentosPage {
 
   }
 
-  
+  Menu() {
+    this.navCtrl.push('MenuPage');
+  }
   segmentChanged(event){
     const valorSegmento = event._value;
     console.log(valorSegmento);
