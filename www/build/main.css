@@ -26939,6 +26939,10 @@ page-resumo h2 {
   font-weight: 600;
 }
 
+page-resumo .font-14px {
+  font-size: 14px;
+}
+
 page-resumo .content-ios {
   background-color: #FFF;
 }
@@ -26966,7 +26970,7 @@ page-resumo img.check-icon {
   width: 22px;
   height: 22px;
   margin-right: 16px;
-  margin-top: 12px;
+  margin-top: 0;
 }
 
 page-resumo img.saque-icons {
